@@ -1,0 +1,203 @@
+.navbar {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    align-items: center;
+    padding: 1rem 0;
+    background-color: $primary-color;
+    @include mq($bpMedium) {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        flex-direction: column;
+        transition: all .5s ease-out;
+        padding: 2rem 0 0 0;
+        transform: translate(0%);
+    }
+    &__list {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        flex: 1;
+        transition: all .5s ease-out;
+        transform: translate(0%);
+        grid-column: 7/12;
+        justify-self: center;
+        @include mq($bpBig) {
+            grid-column: 6/12;
+        }
+    }
+    .show-sidebar {
+        transform: translate(0%)
+    }
+    &__list {
+        @include mq($bpMedium) {
+            flex-direction: column;
+            transition: all .5s ease-out;
+            background-color: transparentize($primary-color, .2);
+            padding: 0 0;
+            width: 100%;
+            top: 11rem;
+            line-height: 1.5;
+            transform: translate(-100%);
+            position: absolute;
+            text-align: left;
+        }
+    }
+    .logo {
+        width: 15rem;
+        height: 4rem;
+        color: $white;
+        display: block;
+        font-size: 3rem;
+        text-align: center;
+        justify-self: center;
+        @include mq($bpMedium) {
+            padding-left: 1rem;
+        }
+        img {
+            margin-top: 2px;
+            width: 100%;
+        }
+    }
+    .burger-menu {
+        display: none;
+        position: absolute;
+        z-index: 1;
+        right: 1rem;
+        top: 3rem;
+        height: 2.1rem;
+        width: 2.8rem;
+        cursor: pointer;
+        transition: all 0.5s ease-in-out;
+        &__btn,
+        &__btn::before,
+        &__btn::after {
+            position: absolute;
+            width: 2.8rem;
+            transition: all 0.5s ease-in-out;
+            height: 3px;
+            background: $white;
+        }
+        &__btn::before,
+        &__btn::after {
+            content: '';
+        }
+        &__btn {
+            right: 0;
+            top: 0.5rem;
+            &::before {
+                top: -8px;
+                height: 3px;
+            }
+            &::after {
+                top: 8px;
+                width: 2rem;
+            }
+        }
+        @include mq($bpMedium) {
+            display: block;
+        }
+    }
+    &__item {
+        font-size: 2rem;
+        position: relative;
+        width: 7rem;
+        transition: all .3s ease;
+        cursor: pointer;
+        @include mq($bpMedium) {
+            width: 100%;
+        }
+        &--user {
+            padding: .5rem 0;
+            grid-column: 12/13;
+            background-color: darken($primary-color, 10%);
+            @include b-radius-1;
+            text-align: center;
+        }
+        &:not(:last-child) {
+            @include mq($bpMedium) {
+                margin-right: 0;
+            }
+        }
+    }
+    &__link,
+    &__link:visited {
+        transition: all .3s ease-in-out;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        color: $white;
+        font-size: 1.3rem;
+        @include mq($bpMedium) {
+            font-size: 3rem;
+            color: $white;
+            margin-bottom: 1rem;
+            display: inline-block;
+            text-align: left;
+            padding-left: 2rem;
+            p {
+                display: inline-block;
+            }
+            i {
+                margin-right: 1rem;
+            }
+        }
+        i {
+            @include mq($bpMedium) {
+                font-size: 2rem;
+            }
+            font-size: 3rem;
+        }
+        //
+        &:hover {
+            color: $secondary-color;
+        }
+    }
+    &__link--home {
+        color: $white!important;
+    }
+}
+
+.contact-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: $tertiary-color;
+    padding: .5rem 2rem;
+    font-size: 1.3rem;
+    @include mq($bpMedium) {
+        flex-direction: column;
+        text-align: center;
+        padding: 1rem 0;
+    }
+    a {
+        @include mq($bpMedium) {
+            display: inline-block;
+            margin-bottom: 1rem
+        }
+        &:not(:last-of-type) {
+            margin-right: 1rem;
+        }
+        &:hover {
+            transition: all .3s ease;
+            color: rgb(160, 157, 194);
+        }
+    }
+    i {
+        font-size: 1.5rem;
+    }
+    * {
+        color: $white;
+    }
+}
+
+select#distrito {
+    color: $black;
+    width: 10rem;
+    text-align: center;
+    @include b-radius-1;
+    option {
+        color: $black;
+    }
+}

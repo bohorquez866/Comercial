@@ -1,0 +1,120 @@
+    .hidden-mobile {
+        @include mq($bpMedium) {
+            display: none
+        }
+    }
+    
+    .grey-bg {
+        background-color: $grey-bg;
+    }
+    
+    .center-text {
+        text-align: center;
+    }
+    
+    .center-y {
+        top: 50%;
+        transform: translateY(-50%);
+    }
+    
+    .center-x {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    
+    .mgt-2 {
+        margin-top: 2rem;
+    }
+    
+    .mgt-3 {
+        margin-top: 3rem;
+    }
+    
+    .inline-block {
+        display: inline-block;
+    }
+    
+    .btn {
+        @include b-radius-1;
+        font-size: 3rem;
+        color: $white;
+        transition: all .3s ease-in;
+        outline: none;
+        border: none;
+        padding: 2rem 3rem;
+        display: inline-block;
+        @extend .center-text;
+        @include mq($bpMedium) {
+            display: block;
+            padding: 2rem 2rem;
+        }
+        cursor: pointer;
+        &__apple {
+            background-color: $black;
+            @include mq($bpMedium) {
+                margin-bottom: 2rem;
+            }
+            &:hover {
+                background-color: #4c4c56;
+                color: $black;
+            }
+        }
+        &__google {
+            color: $black;
+            background-color: $soft-border;
+            &:hover {
+                color: $white;
+                background-color: rgb(65, 63, 63);
+            }
+        }
+    }
+    
+    .accordion {
+        &-header {
+            width: 100%;
+            @include mq($bpMedium) {
+                &::after {
+                    content: '\002B';
+                    font-size: 3rem;
+                    position: absolute;
+                    right: 2rem;
+                    //active status on clik
+                }
+                &.active::after {
+                    content: '\2212';
+                }
+            }
+        }
+        &-body {
+            max-height: 0;
+            position: absolute;
+            z-index: 100;
+            top: 110%;
+            left: 15%;
+            font-size: 1.3rem;
+            color: $white;
+            overflow: hidden;
+            @include b-radius-1;
+            background-color: $tertiary-color;
+            transition: max-height .3s ease-in;
+            //mobile
+            @include mq($bpMedium) {
+                position: static;
+                background-color: transparentize($tertiary-color, .4);
+            }
+        }
+        &-body {
+            li {
+                padding: .5rem 1rem;
+            }
+            @include mq($bpMedium) {
+                font-size: 2rem;
+                line-height: 2;
+                li {
+                    padding: 0 2rem;
+                    text-align: center;
+                }
+            }
+        }
+    }

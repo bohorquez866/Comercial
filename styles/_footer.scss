@@ -1,0 +1,19 @@
+.footer {
+    background-color: $tertiary-color;
+    color: $white;
+    padding: 1rem 0;
+    a {
+        &:not(:last-child) {
+            margin-right: 3rem;
+        }
+        @include mq($bpSmall) {
+            &:not(:last-child) {
+                margin-right: 1rem;
+            }
+        }
+    }
+    i {
+        color: $white;
+        font-size: 3rem;
+    }
+}

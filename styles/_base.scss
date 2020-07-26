@@ -1,0 +1,70 @@
+$primary-font: 'Lato',
+sans-serif;
+$secondary-font: 'Open Sans',
+sans-serif;
+$primary-color: #FE614E;
+$secondary-color: #FCC660;
+$tertiary-color: #142B64;
+$heading-color: #FE7160;
+$text-color: #707070;
+$strong-gray: #C4C4C4;
+$app-text: #C9C9C9;
+$grey-bg: #f0f1f5;
+$strong-black: #515151;
+$soft-border: #dadada;
+$white: #fff;
+$black: #000;
+//breakpoint
+$bpLarge: 93.75em;
+$bpBig: 81.25em;
+$bpMedium: 60em;
+$bpSmall: 30em;
+//
+@mixin b-radius-1 {
+    border-radius: 1rem;
+}
+
+@mixin mq-min($breakpoint) {
+    @media only screen and (min-width: $breakpoint) {
+        @content
+    }
+}
+
+@mixin mq($breakpoint) {
+    @media only screen and (max-width: $breakpoint) {
+        @content
+    }
+}
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit
+}
+
+::selection {
+    background-color: hsla(0, 3%, 13%, 0.5);
+    color: $white;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+    font-family: $primary-font!important;
+    scroll-behavior: smooth;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+img {
+    object-fit: cover;
+    width: 100%;
+}
