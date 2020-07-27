@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/514ec47f32.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles/main.css">
+    <title>DC Site</title>
+</head>
+
+<body>
+    <nav class="navbar">
+        <a href="./index.html" class="logo">
+            <img src="../assets/logo.svg" alt="Comercial Logo">
+        </a>
+
+        <ul class="navbar__list accordion">
+            <!-- HOME -->
+            <a href="./index.html" class="navbar__item accordion-item hidden-mobile">
+                <div class="navbar__link">
+                    <i class="fas fa-home"></i>
+                    <p>Home</p>
+                </div>
+            </a>
+            <!-- COMPRAR -->
+            <li class="navbar__item accordion-item">
+                <div class="navbar__link accordion-header">
+                    <i class="fas fa-tags"></i>
+                    <p>Comprar</p>
+                </div>
+                <ul class="accordion-body accordion__navbar-list">
+                    <li>Hidden</li>
+                    <li>Hidden</li>
+                </ul>
+            </li>
+            <!-- SERVICO -->
+            <li class="navbar__item accordion-item">
+                <div class="navbar__link accordion-header">
+                    <i class="fas fa-store"></i>
+                    <p>Servicio</p>
+                </div>
+                <!-- ACCORDION -->
+                <ul class="accordion-body accordion__navbar-list">
+                    <li>Hidden</li>
+                    <li>Hidden</li>
+                </ul>
+            </li>
+            <!-- Clasificados -->
+            <li class="navbar__item accordion-item ">
+                <div class="navbar__link accordion-header">
+                    <i class="far fa-newspaper "></i>
+                    <p>Clasificados</p>
+                </div>
+                <!-- ACCORDION -->
+                <ul class="accordion-body accordion__navbar-list">
+                    <li>Hidden</li>
+                    <li>Hidden</li>
+                </ul>
+            </li>
+            <!-- DORECTORIOS -->
+            <li class="navbar__item accordion-item">
+                <div class="navbar__link accordion-header">
+                    <i class="far fa-address-book"></i>
+                    <p>Directorios</p>
+                </div>
+                <!-- ACCORDION -->
+                <ul class="accordion-body accordion__navbar-list">
+                    <li>Hidden</li>
+                    <li>Hidden</li>
+                </ul>
+            </li>
+            <!-- CONTACTO -->
+            <li class="navbar__item accordion-item">
+                <div class="navbar__link accordion-header">
+                    <i class="fas fa-id-card"></i>
+                    <p>Contacto</p>
+                </div>
+                <!-- ACCORDION -->
+                <ul class="accordion-body accordion__navbar-list">
+                    <li>Hidden</li>
+                    <li>Hidden</li>
+                </ul>
+            </li>
+
+        </ul>
+
+        <figure class="navbar__item navbar__item--user accordion">
+            <ul class="accordion-item">
+                <div class="navbar__link accordion-header">
+                    <i class="fas fa-user "></i>
+                    <p>Login</p>
+                </div>
+
+                <ul class="accordion-body accordion__navbar-list">
+                    <li>Login</li>
+                    <li>Registrarse</li>
+                    <li>Abre tu Tienda</li>
+                    <li>Registrarse Experto</li>
+                    <li>Publicar Aviso</li>
+                    <li><a href="#">Sistemas publicitarios</a></li>
+                </ul>
+            </ul>
+        </figure>
+
+        <div class="burger-menu ">
+            <span class="burger-menu__btn "></span>
+        </div>
+    </nav>
+    <section class="contact-bar">
+        <article>
+            <a target="_blank" href="tel:+5116489725"><i class="fas fa-phone-alt "></i> +5116489725</a>
+            <a target="_blank" href="https://wa.me/51922237839"><i class="fab fa-whatsapp "></i> +51922237839</a>
+            <a target="_blank" href="mailto:informes@distritocomercial.pe"><i class="far fa-envelope "></i> informes@distritocomercial.pe</a>
+        </article>
+
+        <select id="distrito" class="select">
+            <option value="Distrito " disabled>Distrito</option>
+            <option value="opcion1 ">Opcion</option>
+            <option value="Opcion2 ">Opcion</option>
+        </select>
+    </section>
+
+    <header>
+        <h1 class=" center-text">¿Eres Negociante, <br> Necesitas Aumentar Tus Ventas?</h1>
+        <em class="pink-text center-text">
+            Sólo promociona tu catalogo de productos y recibe tus pedidos de forma automatica
+        </em>
+    </header>
+
+
+    <main>
+        <section class="grid-parent grid-parent__first">
+            <!-- #1 -->
+            <article class="grid-child">
+                <img src="../assets/stats.svg" class="icon" alt="icon">
+                <h3 class="grid-child__title">Caracteristica</h3>
+                <p class="grid-child__text">Quiere la boca exhausta vid, kiwi, piña y fugaz jamón. Fabio me exige, sin tapujos, que añada cerveza al whisky. Jovencillo emponzoñado de whisky, ¡qué figurota exhibes! La cigüeña tocaba.
+                </p>
+            </article>
+
+            <!-- #2 -->
+            <article class="grid-child">
+                <h3 class="grid-child__title">Caracteristica</h3>
+                <img src="../assets/stats.svg" class="icon" alt="icon">
+                <p class="grid-child__text">Quiere la boca exhausta vid, kiwi, piña y fugaz jamón. Fabio me exige, sin tapujos, que añada cerveza al whisky. Jovencillo emponzoñado de whisky, ¡qué figurota exhibes! La cigüeña tocaba.
+                </p>
+            </article>
+
+            <!-- #3 -->
+
+            <article class="grid-child">
+                <img src="../assets/stats.svg" class="icon" alt="icon">
+                <h3 class="grid-child__title">Caracteristica</h3>
+                <p class="grid-child__text">Quiere la boca exhausta vid, kiwi, piña y fugaz jamón. Fabio me exige, sin tapujos, que añada cerveza al whisky. Jovencillo emponzoñado de whisky, ¡qué figurota exhibes! La cigüeña tocaba.
+                </p>
+            </article>
+
+            <!-- #4 -->
+            <article class="grid-child">
+                <img src="../assets/stats.svg" class="icon" alt="icon">
+                <h3 class="grid-child__title">Caracteristica</h3>
+                <p class="grid-child__text">Quiere la boca exhausta vid, kiwi, piña y fugaz jamón. Fabio me exige, sin tapujos, que añada cerveza al whisky. Jovencillo emponzoñado de whisky, ¡qué figurota exhibes! La cigüeña tocaba.
+                </p>
+            </article>
+
+            <!-- #5 -->
+            <article class="grid-child">
+                <img src="../assets/stats.svg" class="icon" alt="icon">
+                <h3 class="grid-child__title">Caracteristica</h3>
+                <p class="grid-child__text">Quiere la boca exhausta vid, kiwi, piña y fugaz jamón. Fabio me exige, sin tapujos, que añada cerveza al whisky. Jovencillo emponzoñado de whisky, ¡qué figurota exhibes! La cigüeña tocaba.
+                </p>
+            </article>
+
+            <!-- #6 -->
+            <article class="grid-child">
+                <img src="../assets/stats.svg" class="icon" alt="icon">
+                <h3 class="grid-child__title">Caracteristica</h3>
+                <p class="grid-child__text">Quiere la boca exhausta vid, kiwi, piña y fugaz jamón. Fabio me exige, sin tapujos, que añada cerveza al whisky. Jovencillo emponzoñado de whisky, ¡qué figurota exhibes! La cigüeña tocaba.
+                </p>
+            </article>
+
+            <!-- #7 -->
+            <article class="grid-child">
+                <img src="../assets/stats.svg" class="icon" alt="icon">
+                <h3 class="grid-child__title">Caracteristica</h3>
+                <p class="grid-child__text">Quiere la boca exhausta vid, kiwi, piña y fugaz jamón. Fabio me exige, sin tapujos, que añada cerveza al whisky. Jovencillo emponzoñado de whisky, ¡qué figurota exhibes! La cigüeña tocaba.
+                </p>
+            </article>
+
+            <!-- #8 -->
+            <article class="grid-child">
+                <img src="../assets/stats.svg" class="icon" alt="icon">
+                <h3 class="grid-child__title">Caracteristica</h3>
+                <p class="grid-child__text">Quiere la boca exhausta vid, kiwi, piña y fugaz jamón. Fabio me exige, sin tapujos, que añada cerveza al whisky. Jovencillo emponzoñado de whisky, ¡qué figurota exhibes! La cigüeña tocaba.
+                </p>
+            </article>
+        </section>
+
+        <section class="cta center-text">
+            <img class="cta__picture" src="../assets/manny-pantoja-9ukCFPNotzs-unsplash.png" alt="CTA Photo">
+            <h2 class="title-bg title-bg--pink cta__title">empieza a tener gananacias desde ya</h2>
+        </section>
+
+        <section class="grid-parent grid-parent__second">
+            <h2 class="title-bg title-bg--blue center-text grid-child__long">¿Cómo Funciona?</h2>
+            <!-- #1 -->
+            <article class="grid-child">
+                <img src="../assets/stats.svg" class="icon" alt="icon">
+                <h3 class="grid-child__title">Caracteristica</h3>
+                <p class="grid-child__text">Quiere la boca exhausta vid, kiwi, piña y fugaz jamón. Fabio me exige, sin tapujos, que añada cerveza al whisky. Jovencillo emponzoñado de whisky, ¡qué figurota exhibes! La cigüeña tocaba.
+                </p>
+            </article>
+
+            <!-- #2 -->
+            <article class="grid-child">
+                <h3 class="grid-child__title">Caracteristica</h3>
+                <img src="../assets/stats.svg" class="icon" alt="icon">
+                <p class="grid-child__text">Quiere la boca exhausta vid, kiwi, piña y fugaz jamón. Fabio me exige, sin tapujos, que añada cerveza al whisky. Jovencillo emponzoñado de whisky, ¡qué figurota exhibes! La cigüeña tocaba.
+                </p>
+            </article>
+
+            <!-- #3 -->
+
+            <article class="grid-child">
+                <img src="../assets/stats.svg" class="icon" alt="icon">
+                <h3 class="grid-child__title">Caracteristica</h3>
+                <p class="grid-child__text">Quiere la boca exhausta vid, kiwi, piña y fugaz jamón. Fabio me exige, sin tapujos, que añada cerveza al whisky. Jovencillo emponzoñado de whisky, ¡qué figurota exhibes! La cigüeña tocaba.
+                </p>
+            </article>
+
+            <!-- #4 -->
+            <article class="grid-child">
+                <img src="../assets/stats.svg" class="icon" alt="icon">
+                <h3 class="grid-child__title">Caracteristica</h3>
+                <p class="grid-child__text">Quiere la boca exhausta vid, kiwi, piña y fugaz jamón. Fabio me exige, sin tapujos, que añada cerveza al whisky. Jovencillo emponzoñado de whisky, ¡qué figurota exhibes! La cigüeña tocaba.
+                </p>
+            </article>
+
+            <!-- #5 -->
+            <article class="grid-child">
+                <img src="../assets/stats.svg" class="icon" alt="icon">
+                <h3 class="grid-child__title">Caracteristica</h3>
+                <p class="grid-child__text">Quiere la boca exhausta vid, kiwi, piña y fugaz jamón. Fabio me exige, sin tapujos, que añada cerveza al whisky. Jovencillo emponzoñado de whisky, ¡qué figurota exhibes! La cigüeña tocaba.
+                </p>
+            </article>
+
+            <!-- #6 -->
+            <article class="grid-child">
+                <img src="../assets/stats.svg" class="icon" alt="icon">
+                <h3 class="grid-child__title">Caracteristica</h3>
+                <p class="grid-child__text">Quiere la boca exhausta vid, kiwi, piña y fugaz jamón. Fabio me exige, sin tapujos, que añada cerveza al whisky. Jovencillo emponzoñado de whisky, ¡qué figurota exhibes! La cigüeña tocaba.
+                </p>
+            </article>
+
+            <!-- #7 -->
+            <article class="grid-child grid-child__long">
+                <img src="../assets/stats.svg" class="icon" alt="icon">
+                <h3 class="grid-child__title">Caracteristica</h3>
+                <p class="grid-child__text">Quiere la boca exhausta vid, kiwi, piña y fugaz jamón. Fabio me exige, sin tapujos, que añada cerveza al whisky. Jovencillo emponzoñado de whisky, ¡qué figurota exhibes! La cigüeña tocaba.
+                </p>
+            </article>
+
+            <!-- #8 -->
+
+
+        </section>
+        <!-- PLANES -->
+        <section class="grid-parent grid-parent__third">
+            <h2 class="title-bg title-bg--blue center-text grid-child__long">Planes</h2>
+
+            <strong class="grid-child__long">Quiere la boca exhausta vid, kiwi, piña y fugaz jamón. Fabio me exige, sin tapujos, que añada cerveza al whisky. Jovencillo emponzoñado de whisky, ¡qué figurota exhibes! La cigüeña tocaba cada vez mejor el saxofón y el búho pedía kiwi y queso. El jefe buscó el éxtasis en un imprevisto baño de whisky y gozó como un duque. Exhíbanse politiquillos zafios, con orejas kilométricas y uñas de gavilán. El cadáver de Wamba, rey godo de España, fue exhumado y trasladado en una caja de zinc que pesó un kilo. El pingüino Wenceslao.</strong>
+
+            <ul class="card__holder">
+
+
+                <li class="card center-text">
+                    <h3 class="card__title">Plan Basico</h3>
+                    <strong class="card__price"><sup>$</sup> 0 <span>/month</span></strong>
+                    <div class="card__benefit"><span>Member</span> <strong>Unlimited</strong></div>
+                    <div class="card__benefit"><span>Projects</span> <strong>Unlimited</strong></div>
+                    <div class="card__benefit"><span>Users</span> <strong>Unlimited</strong></div>
+                    <div class="card__benefit"><span>Storage</span> <strong>200gb</strong></div>
+                    <div class="card__benefit"><span>More</span> <strong>Free Projects</strong></div>
+                    <a href="#" class="title-bg title-bg--blue card__btn">Upgrade</a>
+                </li>
+
+                <li class="card center-text">
+                    <h3 class="card__title">Plan Basico</h3>
+                    <strong class="card__price"><sup>$</sup> 0 <span>/month</span></strong>
+                    <div class="card__benefit"><span>Member</span> <strong>Unlimited</strong></div>
+                    <div class="card__benefit"><span>Projects</span> <strong>Unlimited</strong></div>
+                    <div class="card__benefit"><span>Users</span> <strong>Unlimited</strong></div>
+                    <div class="card__benefit"><span>Storage</span> <strong>200gb</strong></div>
+                    <div class="card__benefit"><span>More</span> <strong>Free Projects</strong></div>
+
+                    <a href="#" class="title-bg title-bg--blue card__btn">Upgrade</a>
+                </li>
+
+                <li class="card card__highlight center-text">
+                    <h3 class="card__title">Plan Basico</h3>
+                    <strong class="card__price"><sup>$</sup> 0 <span>/month</span></strong>
+                    <div class="card__benefit"><span>Member</span> <strong>Unlimited</strong></div>
+                    <div class="card__benefit"><span>Projects</span> <strong>Unlimited</strong></div>
+                    <div class="card__benefit"><span>Users</span> <strong>Unlimited</strong></div>
+                    <div class="card__benefit"><span>Storage</span> <strong>200gb</strong></div>
+                    <div class="card__benefit"><span>More</span> <strong>Free Projects</strong></div>
+
+                    <a href="#" class="title-bg title-bg--blue card__btn">Upgrade</a>
+                </li>
+
+                <li class="card center-text">
+                    <h3 class="card__title">Plan Basico</h3>
+                    <strong class="card__price"><sup>$</sup> 0 <span>/month</span></strong>
+                    <div class="card__benefit"><span>Member</span> <strong>Unlimited</strong></div>
+                    <div class="card__benefit"><span>Projects</span> <strong>Unlimited</strong></div>
+                    <div class="card__benefit"><span>Users</span> <strong>Unlimited</strong></div>
+                    <div class="card__benefit"><span>Storage</span> <strong>200gb</strong></div>
+                    <div class="card__benefit"><span>More</span> <strong>Free Projects</strong></div>
+
+                    <a href="#" class="title-bg title-bg--blue card__btn">Upgrade</a>
+                </li>
+            </ul>
+        </section>
+
+        <!-- FAQs -->
+        <section class="faqs grid-parent grid-parent__third">
+            <h2 class="title-bg title-bg--blue center-text grid-child__long">¿Cómo Funciona?</h2>
+            <span class="center-text  grid-child__long faqs__subtitle">Quiere la boca exhausta vid, kiwi, piña y fugaz jamón. Fabio me exige, sin tapujos, que añada cerveza al whisky. Jovencillo emponzoñado de whisky, ¡qué.</span>
+            <!-- Accordion Container -->
+            <ul class="  grid-child__long accordion">
+
+                <!-- PREGUNTA 1 -->
+
+                <li class="faqs__item accordion-item">
+                    <div class="faqs__item__header accordion-header accordion-header-shown">
+                        <h3 class="blue-title">Pregunta</h3>
+                    </div>
+
+                    <div class="accordion-body accordion-body-shown">
+                        <p class="faqs__item-text">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est dolorem ab consequuntur fugiat necessitatibus commodi suscipit quos quisquam aliquid a omnis, libero quidem optio amet deserunt enim, corporis, quasi odio?
+                        </p>
+                    </div>
+                </li>
+                <li class="faqs__item accordion-item">
+                    <div class="faqs__item__header accordion-header">
+                        <h3 class="blue-title">Pregunta</h3>
+                    </div>
+
+                    <div class="accordion-body faqs__body">
+                        <p class="faqs__item-text">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est dolorem ab consequuntur fugiat necessitatibus commodi suscipit quos quisquam aliquid a omnis, libero quidem optio amet deserunt enim, corporis, quasi odio?
+                        </p>
+                    </div>
+                </li>
+
+                <li class="faqs__item accordion-item">
+                    <div class="faqs__item__header accordion-header">
+                        <h3 class="blue-title">Pregunta</h3>
+                    </div>
+
+                    <div class="accordion-body faqs__body">
+                        <p class="faqs__item-text">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est dolorem ab consequuntur fugiat necessitatibus commodi suscipit quos quisquam aliquid a omnis, libero quidem optio amet deserunt enim, corporis, quasi odio?
+                        </p>
+                    </div>
+                </li>
+
+                <li class="faqs__item accordion-item">
+                    <div class="faqs__item__header accordion-header">
+                        <h3 class="blue-title">Pregunta</h3>
+                    </div>
+
+                    <div class="accordion-body faqs__body">
+                        <p class="faqs__item-text">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est dolorem ab consequuntur fugiat necessitatibus commodi suscipit quos quisquam aliquid a omnis, libero quidem optio amet deserunt enim, corporis, quasi odio?
+                        </p>
+                    </div>
+                </li>
+        </section>
+
+
+        <!-- PREGUNTA 2 -->
+
+
+
+    </main>
+
+
+    <footer class="footer center-text ">
+
+        <p class="footer-title">
+            © 2020 <strong>Distrito Comercial</strong>. Todos los derechos reservados. | Producido por <strong>NETESA</strong> | Diseñado por <a href="https://jesusbohorquezz.netlify.app/" target="_blank">Jesus Bohorquez</a>
+        </p>
+
+
+        <div>
+            <a href="# "><i class="fab fa-facebook-f "></i></a>
+            <a href="# "><i class="fab fa-twitter "></i></a>
+            <a href="# "><i class="fab fa-whatsapp "></i></a>
+            <a href="# "><i class="far fa-envelope "></i></a>
+            <a href=" "><i class="fab fa-instagram "></i></a>
+            <a href=" "><i class="fab fa-youtube "></i></a>
+            <a href=" "><i class="fab fa-linkedin "></i></a>
+        </div>
+
+    </footer>
+
+
+
+</body>
+
+<script src="../script.js"></script>
+
+</html>

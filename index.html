@@ -4,6 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Jesus Bohorquez">
+    <meta name="contact" content="https://www.linkedin.com/in/jes%C3%BAs-boh%C3%B3rquez-5b2643137/">
     <script src="https://kit.fontawesome.com/514ec47f32.js" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./styles/main.css">
@@ -13,7 +15,7 @@
 <body>
     <nav class="navbar">
         <a href="./index.html" class="logo">
-            <p>LOGO</p>
+            <img src="./assets/logo.svg" alt="Comercial Logo">
         </a>
 
         <ul class="navbar__list accordion">
@@ -29,7 +31,7 @@
                     <i class="fas fa-tags"></i>
                     <p>Comprar</p>
                 </div>
-                <ul class="accordion-body">
+                <ul class="accordion-body accordion__navbar-list">
 
                     <li>Hidden</li>
                     <li>Hidden</li>
@@ -45,7 +47,7 @@
                 </div>
                 <!-- ACCORDION -->
 
-                <ul class="accordion-body">
+                <ul class="accordion-body accordion__navbar-list">
                     <li>Hidden</li>
                     <li>Hidden</li>
                 </ul>
@@ -57,35 +59,36 @@
                     <p>Clasificados</p>
                 </div>
                 <!-- ACCORDION -->
-                <ul class="accordion-body">
+                <ul class="accordion-body accordion__navbar-list">
                     <li>Hidden</li>
                     <li>Hidden</li>
                 </ul>
             </li>
 
-            <li class="navbar__item accordion-item ">
-                <div class="navbar__link accordion-header ">
-                    <i class="far fa-address-book "></i>
-                    <p>Directorio</p>
+
+            <li class="navbar__item accordion-item">
+                <div class="navbar__link accordion-header">
+                    <i class="far fa-address-book"></i>
+                    <p>Directorios</p>
                 </div>
-                <ul class="accordion-body ">
+                <!-- ACCORDION -->
+                <ul class="accordion-body accordion__navbar-list">
                     <li>Hidden</li>
                     <li>Hidden</li>
                 </ul>
             </li>
 
-
-            <li class="navbar__item accordion-item ">
-                <div class="navbar__link accordion-header ">
-                    <i class="fas fa-id-card "></i>
+            <li class="navbar__item accordion-item">
+                <div class="navbar__link accordion-header">
+                    <i class="fas fa-id-card"></i>
                     <p>Contacto</p>
                 </div>
-                <ul class="accordion-body">
+                <!-- ACCORDION -->
+                <ul class="accordion-body accordion__navbar-list">
                     <li>Hidden</li>
                     <li>Hidden</li>
                 </ul>
             </li>
-
         </ul>
 
         <figure class="navbar__item navbar__item--user accordion">
@@ -95,9 +98,13 @@
                     <p>Login</p>
                 </div>
 
-                <ul class="accordion-body">
+                <ul class="accordion-body accordion__navbar-list">
                     <li>Login</li>
                     <li>Registrarse</li>
+                    <li>Abre tu Tienda</li>
+                    <li>Registrarse Experto</li>
+                    <li>Publicar Aviso</li>
+                    <li><a href="#">Sistemas publicitarios</a></li>
                 </ul>
             </ul>
         </figure>
@@ -108,12 +115,11 @@
     </nav>
     <section class="contact-bar">
         <article>
-            <a href=" "><i class="fas fa-phone-alt "></i> +5116489725</a>
-            <a href=" "><i class="fab fa-whatsapp "></i> +51922237839</a>
-            <a href=" "><i class="far fa-envelope "></i> informes@distritocomercial.pe</a>
-        </article>
+            <a target="_blank" href="tel:+5116489725"><i class="fas fa-phone-alt "></i> +5116489725</a>
+            <a target="_blank" href="https://wa.me/51922237839"><i class="fab fa-whatsapp "></i> +51922237839</a>
+            <a target="_blank" href="mailto:informes@distritocomercial.pe"><i class="far fa-envelope "></i> informes@distritocomercial.pe</a>
 
-        <select id="distrito" class="select">
+            <select id="distrito" class="select">
             <option value="Distrito " disabled>Distrito</option>
             <option value="opcion1 ">Opcion</option>
             <option value="Opcion2 ">Opcion</option>
@@ -131,7 +137,7 @@
                 </h2>
                 <strong class="strong-gray ">Tu negocio virtual a un click</strong>
                 <p class="categorias__text-body ">
-                    El Centro Comercial Virtual de tu Distrito, pensando en las personas que viven, trabajan o estudian en tu distrito, acercamos la oferta comercial al barrio en forma virtual
+                    <strong>El Centro Comercial Virtual de tu Distrito</strong>, pensando en las personas que viven, trabajan o estudian en tu distrito, acercamos la oferta comercial al barrio en forma virtual
                 </p>
                 <p class="categorias__text-body ">Unimos a los “Proveedores” con los “Compradores” de forma directa, los pedidos se generan desde nuestra plataforma de manera muy sencilla, y las ordenes de compra llegan al instante a la “Tienda” selecionada para que sean atendidas.</p>
             </article>
@@ -187,9 +193,12 @@
                 <h2 class="two-color-title ">Distrito Comercial <span>Servicios</span>
                 </h2>
                 <strong class="strong-gray ">Cientos de profesionales disponibles</strong>
-                <p class="categorias__text-body ">
-                    Busca, encuentra y conecta con expertos de confianza recomendados en tu distrito. </p>
-                <p class="categorias__text-body ">Puedes encontrar cientos de profesionales crecanos, que ofrecen el servicio que estas buscando, con todo el detalle necesario, deforma rápida y gratuita.</p>
+                <p class="categorias__text-body">
+                    Busca, encuentra y conecta con expertos de confianza recomendados en tu distrito.
+                    <br>
+                    <p class="categorias__text-body ">Puedes encontrar cientos de profesionales crecanos, que ofrecen el servicio que estas buscando, con todo el detalle necesario, deforma rápida y gratuita.</p>
+                </p>
+
             </article>
 
             <article class="categorias__compra grey-bg ">
@@ -225,15 +234,15 @@
             <article class="clasificados__content ">
                 <h2 class="two-color-title ">Distrito Comercial <span>Avisos Clasificados</span></h2>
                 <strong class="strong-gray ">Anuncios de confianza</strong>
-                <p class="heading-text mgt-3 ">
+                <p class="categorias__text-body mgt-3">
                     Ofrecemos un medio de satisfacer las necesidades que presentan las personas de encontrar rápidamente los servicios clasificados garantizados que requieran.
                 </p>
 
-                <p class="heading-text heading-text--bold ">
+                <p class="categorias__text-body heading-text--bold">
                     <strong>Queremos crear una comunidad segura</strong> para que las personas puedan comprar y vender con confianza, contacto directamente con el comprador o vendedor.
                 </p>
 
-                <p class="heading-text ">
+                <p class="categorias__text-body">
                     Publicamos anuncios libres de spam, por que cada anuncio pasa un flitro de aprobación (para evitar anuncios de sexo, estafas, préstamos fraudolentos y demás anuncios ilícitos). Así que, no verás el anuncio publicado de forma inmediata. En cuanto lo analicemos
                     y veamos que no incumple los términos y condiciones de uso, le daremos el visto bueno y aparecerá publicado.
                 </p>
@@ -243,13 +252,20 @@
         </section>
     </main>
     <footer class="footer center-text ">
-        <a href="# "><i class="fab fa-facebook-f "></i></a>
-        <a href="# "><i class="fab fa-twitter "></i></a>
-        <a href="# "><i class="fab fa-whatsapp "></i></a>
-        <a href="# "><i class="far fa-envelope "></i></a>
-        <a href=" "><i class="fab fa-instagram "></i></a>
-        <a href=" "><i class="fab fa-youtube "></i></a>
-        <a href=" "><i class="fab fa-linkedin "></i></a>
+        <p class="footer-title">
+            © 2020 <strong>Distrito Comercial</strong>. Todos los derechos reservados. | Producido por <strong>NETESA</strong> | Diseñado por <a href="https://jesusbohorquezz.netlify.app/" target="_blank">Jesus Bohorquez</a>
+        </p>
+
+
+        <div>
+            <a href="# "><i class="fab fa-facebook-f "></i></a>
+            <a href="# "><i class="fab fa-twitter "></i></a>
+            <a href="# "><i class="fab fa-whatsapp "></i></a>
+            <a href="# "><i class="far fa-envelope "></i></a>
+            <a href=" "><i class="fab fa-instagram "></i></a>
+            <a href=" "><i class="fab fa-youtube "></i></a>
+            <a href=" "><i class="fab fa-linkedin "></i></a>
+        </div>
 
     </footer>
 

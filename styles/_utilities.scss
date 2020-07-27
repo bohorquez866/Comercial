@@ -73,48 +73,51 @@
     .accordion {
         &-header {
             width: 100%;
-            @include mq($bpMedium) {
-                &::after {
-                    content: '\002B';
-                    font-size: 3rem;
-                    position: absolute;
-                    right: 2rem;
-                    //active status on clik
-                }
-                &.active::after {
-                    content: '\2212';
-                }
+            &::after {
+                content: '\002B';
+                font-size: 3rem;
+                position: absolute;
+                right: 2rem;
+                //active status on clik
+            }
+            &.active::after {
+                content: '\2212';
             }
         }
-        &-body {
-            max-height: 0;
+        &__navbar-list {
+            text-align: center;
             position: absolute;
             z-index: 100;
             top: 110%;
-            left: 15%;
             font-size: 1.3rem;
             color: $white;
-            overflow: hidden;
-            @include b-radius-1;
-            background-color: $tertiary-color;
-            transition: max-height .3s ease-in;
-            //mobile
             @include mq($bpMedium) {
                 position: static;
                 background-color: transparentize($tertiary-color, .4);
-            }
-        }
-        &-body {
-            li {
-                padding: .5rem 1rem;
-            }
-            @include mq($bpMedium) {
                 font-size: 2rem;
                 line-height: 2;
+                //icon in mobile V
                 li {
                     padding: 0 2rem;
                     text-align: center;
                 }
+            }
+            @include mq-min($bpBig) {
+                width: 200%;
+                right: -50%;
+            }
+            @include b-radius-1;
+            background-color: $tertiary-color;
+        }
+        &-body {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height .3s ease-in;
+            &-shown {}
+            //mobile
+            //ICON in Desktop
+            li {
+                padding: .5rem 1rem;
             }
         }
     }

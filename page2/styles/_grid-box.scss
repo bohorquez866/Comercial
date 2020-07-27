@@ -1,0 +1,194 @@
+.grid-parent {
+    display: grid;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+    padding: 0 10%;
+    margin: 5rem 0;
+    grid-gap: 2rem;
+    grid-row-gap: 4rem;
+    &__first {
+        grid-template-columns: repeat( auto-fit, minmax(26rem, 1fr));
+    }
+    &__second {
+        grid-template-columns: repeat( 2, 1fr);
+        background-color: #F9F9F9;
+        padding: 5rem 10%;
+    }
+    &__third {
+        grid-template-columns: repeat( 4, 1fr);
+        padding: 0 10%;
+    }
+    &,
+    &__first,
+    &__second,
+    &__third,
+    .cta {
+        @include mq($bpMedium) {
+            grid-template-columns: 1fr;
+        }
+    }
+}
+
+.grid-child {
+    display: grid;
+    grid-template-columns: max-content 1fr;
+    grid-template-rows: max-content 1fr;
+    grid-gap: .5rem;
+    grid-column-gap: max(2rem);
+    &__long {
+        grid-column: 1/-1;
+    }
+    &__title,
+    &__text {
+        grid-column: 2/3;
+    }
+    &__title,
+    .icon {
+        align-self: start;
+    }
+    .icon {
+        grid-column: 1/2;
+        grid-row: 1/-1;
+    }
+    &__title {
+        grid-row: 1/2;
+        color: $tertiary-color;
+        font-size: 2rem;
+    }
+    &__text {
+        grid-row: 2/3;
+        color: $text-color;
+        font-size: 1.5rem;
+        text-align: justify;
+        line-height: 1.5;
+    }
+}
+
+.cta {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin: 4rem 0;
+    @include mq($bpMedium) {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(2, max-content);
+        grid-gap: 2rem;
+        margin: 0;
+    }
+    &__picture,
+    &__title {
+        align-self: center;
+        justify-self: center;
+        @include b-radius-1;
+        @include mq($bpMedium) {
+            grid-column: auto;
+            grid-gap: 2rem;
+            grid-template-rows: repeat(2, max-content);
+        }
+    }
+    &__picture {
+        grid-column: 1/2;
+        width: 70%;
+        @include mq($bpMedium) {
+            grid-column: 1/-1;
+            grid-row: 1/2;
+        }
+    }
+    &__title {
+        grid-column: 2/3;
+        font-size: 3rem;
+        width: 65%;
+        @include mq($bpMedium) {
+            grid-row: 2/3;
+            grid-column: 1/-1;
+            font-size: 2rem;
+            padding: 1rem;
+            align-self: start;
+        }
+    }
+}
+
+.card {
+    @include b-radius-1;
+    color: $card-text;
+    overflow: hidden;
+    border: 1px solid $tertiary-color;
+    padding: 2rem 2rem 4rem 2rem;
+    position: relative;
+    justify-self: stretch;
+    //
+    &__holder {
+        display: grid;
+        grid-column: 1/-1;
+        padding: 0;
+        grid-gap: max(2rem);
+        grid-template-columns: repeat( 4, minmax(23rem, 30rem));
+        @include mq($bpMedium) {
+            grid-template-columns: repeat(4, 85%);
+            grid-template-rows: max-content;
+            overflow-x: auto;
+            overflow-y: hidden;
+            grid-gap: 0 2rem;
+        }
+    }
+    &__highlight {
+        color: $primary-color;
+        & *:not(.card__btn) {
+            color: inherit;
+        }
+    }
+    &__title {
+        font-size: 3rem;
+    }
+    &__price {
+        font-size: 2rem;
+        margin: 2rem 0;
+        display: block;
+    }
+    &__benefit {
+        display: flex;
+        justify-content: space-between;
+        font-size: 1.8rem;
+        padding: 1.5rem 0;
+        margin: .5rem 0;
+        border-top: 1px solid $tertiary-color;
+    }
+    &__btn {
+        display: block;
+        font-size: 2rem;
+        padding: 1rem 0;
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        width: 100%;
+        border-radius: 0 0 1rem 1rem;
+    }
+}
+
+.faqs {
+    background-color: #F9F9F9;
+    &__subtitle {
+        font-size: 2rem;
+    }
+    &__item {
+        margin-bottom: 1rem;
+        &__header {
+            padding: 1rem 2rem;
+            border-radius: 1rem 1rem 0 0;
+            background-color: $grey-bg;
+            position: relative;
+            cursor: pointer;
+            &::after {
+                top: 0;
+            }
+        }
+        &__body {
+            background-color: #fff;
+        }
+        &-text {
+            padding: 2rem;
+            font-size: 1.6rem;
+        }
+    }
+}

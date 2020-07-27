@@ -1,5 +1,7 @@
 h1 {
-    margin-top: 2rem;
+    margin: 2rem 0;
+    font-size: 4rem;
+    color: $tertiary-color;
     @include mq($bpSmall) {
         padding: 0 1rem;
         font-size: 2.5rem!important;
@@ -38,6 +40,14 @@ h1 {
     }
 }
 
+.pink-text {
+    color: $heading-color;
+    display: block;
+    font-style: normal;
+    margin: 2rem 0;
+    font-size: 2rem;
+}
+
 .strong-gray {
     display: block;
     color: $strong-gray;
@@ -60,11 +70,12 @@ h1 {
     text-align: justify;
     color: $text-color;
     &:not(:last-of-type) {
-        margin-top: 6rem;
-        margin-bottom: 4rem;
+        margin-top: 2rem 0;
         @include mq($bpSmall) {
             text-align: justify;
             margin-top: 3rem;
+            color: $white;
+            font-size: 1.8rem;
         }
     }
     @include mq-min($bpLarge) {
@@ -74,7 +85,7 @@ h1 {
 
 .heading-text {
     color: $strong-black;
-    font-size: 2rem;
+    font-size: 1.6rem;
     margin-bottom: 1rem;
     &--bold {
         margin: 3rem 0;
@@ -85,9 +96,10 @@ h1 {
     }
     @include mq($bpSmall) {
         text-align: justify;
+        font-size: 1.8rem;
     }
     @include mq-min($bpLarge) {
-        font-size: 3.5rem;
+        font-size: 2.2rem;
     }
 }
 
@@ -109,4 +121,28 @@ h1 {
     @include mq-min($bpLarge) {
         font-size: 9rem;
     }
+}
+
+//page 2
+.title-bg {
+    color: $white;
+    @include b-radius-1;
+    &--pink {
+        background-color: $primary-color;
+        padding: 1rem 3rem;
+    }
+    &--blue {
+        background-color: $tertiary-color;
+        font-size: 3rem;
+        text-transform: uppercase;
+        padding: 2rem;
+        @include mq($bpSmall) {
+            padding: 1rem;
+        }
+    }
+}
+
+.blue-title {
+    color: $tertiary-color;
+    font-size: 2rem;
 }

@@ -10,12 +10,14 @@ $text-color: #707070;
 $strong-gray: #C4C4C4;
 $app-text: #C9C9C9;
 $grey-bg: #f0f1f5;
+$light-grey: #F9F9F9;
 $strong-black: #515151;
 $soft-border: #dadada;
+$card-text: #5D5D5D;
 $white: #fff;
 $black: #000;
 //breakpoint
-$bpLarge: 93.75em;
+$bpLarge: 106.25em;
 $bpBig: 81.25em;
 $bpMedium: 60em;
 $bpSmall: 30em;
@@ -58,6 +60,7 @@ html {
 
 a {
     text-decoration: none;
+    color: inherit;
 }
 
 li {
