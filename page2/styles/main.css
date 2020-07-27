@@ -231,11 +231,14 @@ h1 {
   font-size: 3rem;
   text-transform: uppercase;
   padding: 2rem;
+  max-width: 40rem;
 }
 
 @media only screen and (max-width: 30em) {
   .title-bg--blue {
     padding: 1rem;
+    width: 25rem;
+    font-size: 2.4rem;
   }
 }
 
@@ -479,7 +482,7 @@ h1 {
     background-color: rgba(254, 97, 78, 0.8);
     padding: 0 0;
     width: 100%;
-    top: 11rem;
+    top: 13.7rem;
     line-height: 1.5;
     -webkit-transform: translate(-100%);
             transform: translate(-100%);
@@ -514,7 +517,7 @@ h1 {
   position: absolute;
   z-index: 1;
   right: 1rem;
-  top: 3rem;
+  top: 4rem;
   height: 2.1rem;
   width: 2.8rem;
   cursor: pointer;
@@ -582,7 +585,7 @@ h1 {
 }
 
 .navbar__item--user {
-  padding: .5rem 0;
+  padding: 0;
   -ms-grid-column: 12;
   -ms-grid-column-span: 1;
   grid-column: 12/13;
@@ -745,8 +748,8 @@ select#distrito option {
 }
 
 .grid-parent__first {
-  -ms-grid-columns: (minmax(26rem, 1fr))[auto-fit];
-      grid-template-columns: repeat(auto-fit, minmax(26rem, 1fr));
+  -ms-grid-columns: (minmax(30rem, 1fr))[4];
+      grid-template-columns: repeat(4, minmax(30rem, 1fr));
 }
 
 .grid-parent__second {

@@ -36,7 +36,7 @@
             background-color: transparentize($primary-color, .2);
             padding: 0 0;
             width: 100%;
-            top: 11rem;
+            top: 13.7rem;
             line-height: 1.5;
             transform: translate(-100%);
             position: absolute;
@@ -63,7 +63,7 @@
         position: absolute;
         z-index: 1;
         right: 1rem;
-        top: 3rem;
+        top: 4rem;
         height: 2.1rem;
         width: 2.8rem;
         cursor: pointer;
@@ -114,7 +114,7 @@
             width: 100%;
         }
         &--user {
-            padding: .5rem 0;
+            padding: 0;
             grid-column: 12/13;
             background-color: darken($primary-color, 10%);
             @include b-radius-1;
