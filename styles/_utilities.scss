@@ -4,6 +4,10 @@
         }
     }
     
+    .white-bg {
+        background-color: $white!important;
+    }
+    
     .grey-bg {
         background-color: $grey-bg;
     }
@@ -21,6 +25,14 @@
         position: absolute;
         left: 50%;
         transform: translateX(-50%);
+    }
+    
+    .transformY-2 {
+        transform: translateY(-2rem);
+    }
+    
+    .mgt-1 {
+        margin: 1rem 0;
     }
     
     .mgt-2 {

@@ -130,6 +130,9 @@
             overflow-x: auto;
             overflow-y: hidden;
             grid-gap: 0 2rem;
+            border: 1px solid $text-color;
+            padding: 1rem;
+            border-radius: 1rem;
         }
     }
     &__highlight {
@@ -153,6 +156,9 @@
         padding: 1.5rem 0;
         margin: .5rem 0;
         border-top: 1px solid $tertiary-color;
+        &--border-pink {
+            border-top: 1px solid $primary-color;
+        }
     }
     &__btn {
         display: block;

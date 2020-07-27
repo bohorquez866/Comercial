@@ -1,0 +1,28 @@
+.grid-child {
+    &--curved {
+        @include b-radius-1;
+        padding: 1rem;
+    }
+    &--white {
+        @include b-radius-1;
+        background-color: $white;
+        padding: 1rem 2rem;
+        grid-template-columns: 30rem;
+        grid-template-rows: repeat(3, max-content);
+        box-shadow: 2px 12px 18px #0000001A;
+        align-self: center;
+        justify-self: center;
+        font-size: 1.5rem;
+        .subheading {
+            font-size: 2rem;
+            margin-bottom: 2rem;
+        }
+    }
+}
+
+.card-holder-3 {
+    grid-template-columns: repeat(3, minmax(23rem, 30rem));
+    @include mq($bpMedium) {
+        grid-template-columns: repeat(3, 85%);
+    }
+}

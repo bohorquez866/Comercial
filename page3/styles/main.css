@@ -1018,6 +1018,47 @@ select#distrito option {
   font-size: 1.6rem;
 }
 
+.grid-child--curved {
+  border-radius: 1rem;
+  padding: 1rem;
+}
+
+.grid-child--white {
+  border-radius: 1rem;
+  background-color: #fff;
+  padding: 1rem 2rem;
+  -ms-grid-columns: 30rem;
+      grid-template-columns: 30rem;
+  -ms-grid-rows: (max-content)[3];
+      grid-template-rows: repeat(3, -webkit-max-content);
+      grid-template-rows: repeat(3, max-content);
+  -webkit-box-shadow: 2px 12px 18px #0000001A;
+          box-shadow: 2px 12px 18px #0000001A;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  -ms-grid-column-align: center;
+      justify-self: center;
+  font-size: 1.5rem;
+}
+
+.grid-child--white .subheading {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+.card-holder-3 {
+  -ms-grid-columns: (minmax(23rem, 30rem))[3];
+      grid-template-columns: repeat(3, minmax(23rem, 30rem));
+}
+
+@media only screen and (max-width: 60em) {
+  .card-holder-3 {
+    -ms-grid-columns: (85%)[3];
+        grid-template-columns: repeat(3, 85%);
+  }
+}
+
 .footer {
   -ms-flex-pack: distribute;
       justify-content: space-around;

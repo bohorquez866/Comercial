@@ -46,6 +46,10 @@ img {
   }
 }
 
+.white-bg {
+  background-color: #fff !important;
+}
+
 .grey-bg {
   background-color: #f0f1f5;
 }
@@ -65,6 +69,15 @@ img {
   left: 50%;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
+}
+
+.transformY-2 {
+  -webkit-transform: translateY(-2rem);
+          transform: translateY(-2rem);
+}
+
+.mgt-1 {
+  margin: 1rem 0;
 }
 
 .mgt-2 {
@@ -222,6 +235,15 @@ h1 {
   .two-color-title {
     font-size: 6rem;
   }
+}
+
+.text-normal {
+  font-size: 1.5rem;
+}
+
+.subheading {
+  font-size: 2rem;
+  margin-bottom: 2rem;
 }
 
 .pink-title {
