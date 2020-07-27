@@ -1,7 +1,7 @@
 .grid-parent {
     display: grid;
     align-content: center;
-    align-items: center;
+    align-items: start;
     justify-content: center;
     justify-items: center;
     padding: 0 10%;
@@ -9,7 +9,12 @@
     grid-gap: 2rem;
     grid-row-gap: 4rem;
     &__first {
-        grid-template-columns: repeat( 4, minmax(30rem, 1fr));
+        grid-template-columns: repeat( 4, minmax(30rem, 40rem));
+        align-items: start;
+        @include mq($bpBig) {
+            grid-template-columns: repeat(2, 1fr);
+            justify-items: start;
+        }
     }
     &__second {
         grid-template-columns: repeat( 2, 1fr);
@@ -114,7 +119,7 @@
     color: $card-text;
     overflow: hidden;
     border: 1px solid $tertiary-color;
-    padding: 2rem 2rem 4rem 2rem;
+    padding: 2rem 1rem 5rem 1rem;
     position: relative;
     justify-self: stretch;
     //
@@ -123,9 +128,9 @@
         grid-column: 1/-1;
         padding: 0;
         grid-gap: max(2rem);
-        grid-template-columns: repeat( 4, minmax(23rem, 30rem));
-        @include mq($bpMedium) {
-            grid-template-columns: repeat(4, 85%);
+        grid-template-columns: repeat( 4, max-content);
+        @include mq($bpBig) {
+            grid-template-columns: repeat(4, 40%);
             grid-template-rows: max-content;
             overflow-x: auto;
             overflow-y: hidden;
@@ -133,6 +138,12 @@
             border: 1px solid $text-color;
             padding: 1rem;
             border-radius: 1rem;
+        }
+        @include mq($bpMedium) {
+            grid-template-columns: repeat(4, 60%);
+        }
+        @include mq($bpSmall) {
+            grid-template-columns: repeat(4, 85%);
         }
     }
     &__highlight {
@@ -142,19 +153,16 @@
         }
     }
     &__title {
-        font-size: 3rem;
+        font-size: 2.2rem;
     }
     &__price {
-        font-size: 2rem;
-        margin: 2rem 0;
+        font-size: 1.8rem;
+        margin: .5rem 0;
         display: block;
     }
     &__benefit {
-        display: flex;
-        justify-content: space-between;
-        font-size: 1.8rem;
-        padding: 1.5rem 0;
-        margin: .5rem 0;
+        font-size: 1.6rem;
+        padding: 1rem 0;
         border-top: 1px solid $tertiary-color;
         &--border-pink {
             border-top: 1px solid $primary-color;
@@ -169,6 +177,10 @@
         bottom: 0;
         width: 100%;
         border-radius: 0 0 1rem 1rem;
+        transition: all .3s ease-in;
+        &:hover {
+            color: $primary-color;
+        }
     }
 }
 

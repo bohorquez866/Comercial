@@ -46,6 +46,35 @@ img {
   }
 }
 
+.justify-start {
+  -ms-grid-column-align: start;
+      justify-self: start;
+}
+
+.fz-2r {
+  font-size: 2rem;
+}
+
+@media only screen and (max-width: 60em) {
+  .fz-2r {
+    font-size: 1.5rem;
+  }
+}
+
+@media only screen and (max-width: 60em) {
+  .fz-25r-sm {
+    font-size: 2.5rem;
+  }
+}
+
+.fz-3r {
+  font-size: 3rem;
+}
+
+.wd-80 {
+  width: 80%;
+}
+
 .white-bg {
   background-color: #fff !important;
 }
@@ -203,7 +232,7 @@ h1 {
 @media only screen and (max-width: 30em) {
   h1 {
     padding: 0 1rem;
-    font-size: 2.5rem !important;
+    font-size: 3rem !important;
   }
 }
 
@@ -248,7 +277,7 @@ h1 {
 
 .pink-title {
   color: #FE7160;
-  font-size: 4.5rem;
+  font-size: 3rem;
   margin-bottom: 2rem;
 }
 
@@ -385,7 +414,7 @@ h1 {
   font-size: 3rem;
   text-transform: uppercase;
   padding: 2rem;
-  max-width: 40rem;
+  width: 40rem;
 }
 
 @media only screen and (max-width: 30em) {

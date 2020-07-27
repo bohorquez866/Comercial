@@ -49,7 +49,7 @@ h1 {
 @media only screen and (max-width: 30em) {
   h1 {
     padding: 0 1rem;
-    font-size: 2.5rem !important;
+    font-size: 3rem !important;
   }
 }
 
@@ -94,7 +94,7 @@ h1 {
 
 .pink-title {
   color: #FE7160;
-  font-size: 4.5rem;
+  font-size: 3rem;
   margin-bottom: 2rem;
 }
 
@@ -231,7 +231,7 @@ h1 {
   font-size: 3rem;
   text-transform: uppercase;
   padding: 2rem;
-  max-width: 40rem;
+  width: 40rem;
 }
 
 @media only screen and (max-width: 30em) {
@@ -251,6 +251,35 @@ h1 {
   .hidden-mobile {
     display: none;
   }
+}
+
+.justify-start {
+  -ms-grid-column-align: start;
+      justify-self: start;
+}
+
+.fz-2r {
+  font-size: 2rem;
+}
+
+@media only screen and (max-width: 60em) {
+  .fz-2r {
+    font-size: 1.5rem;
+  }
+}
+
+@media only screen and (max-width: 60em) {
+  .fz-25r-sm {
+    font-size: 2.5rem;
+  }
+}
+
+.fz-3r {
+  font-size: 3rem;
+}
+
+.wd-80 {
+  width: 80%;
 }
 
 .white-bg {
@@ -734,9 +763,9 @@ select#distrito option {
   display: grid;
   -ms-flex-line-pack: center;
       align-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -748,8 +777,19 @@ select#distrito option {
 }
 
 .grid-parent__first {
-  -ms-grid-columns: (minmax(30rem, 1fr))[4];
-      grid-template-columns: repeat(4, minmax(30rem, 1fr));
+  -ms-grid-columns: (minmax(30rem, 40rem))[4];
+      grid-template-columns: repeat(4, minmax(30rem, 40rem));
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+}
+
+@media only screen and (max-width: 81.25em) {
+  .grid-parent__first {
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+    justify-items: start;
+  }
 }
 
 .grid-parent__second {
@@ -910,7 +950,7 @@ select#distrito option {
   color: #5D5D5D;
   overflow: hidden;
   border: 1px solid #142B64;
-  padding: 2rem 2rem 4rem 2rem;
+  padding: 2rem 1rem 5rem 1rem;
   position: relative;
   -ms-grid-column-align: stretch;
       justify-self: stretch;
@@ -922,14 +962,15 @@ select#distrito option {
   grid-column: 1/-1;
   padding: 0;
   grid-gap: 2rem;
-  -ms-grid-columns: (minmax(23rem, 30rem))[4];
-      grid-template-columns: repeat(4, minmax(23rem, 30rem));
+  -ms-grid-columns: (max-content)[4];
+      grid-template-columns: repeat(4, -webkit-max-content);
+      grid-template-columns: repeat(4, max-content);
 }
 
-@media only screen and (max-width: 60em) {
+@media only screen and (max-width: 81.25em) {
   .card__holder {
-    -ms-grid-columns: (85%)[4];
-        grid-template-columns: repeat(4, 85%);
+    -ms-grid-columns: (40%)[4];
+        grid-template-columns: repeat(4, 40%);
     -ms-grid-rows: max-content;
         grid-template-rows: -webkit-max-content;
         grid-template-rows: max-content;
@@ -942,6 +983,20 @@ select#distrito option {
   }
 }
 
+@media only screen and (max-width: 60em) {
+  .card__holder {
+    -ms-grid-columns: (60%)[4];
+        grid-template-columns: repeat(4, 60%);
+  }
+}
+
+@media only screen and (max-width: 30em) {
+  .card__holder {
+    -ms-grid-columns: (85%)[4];
+        grid-template-columns: repeat(4, 85%);
+  }
+}
+
 .card__highlight {
   color: #FE614E;
 }
@@ -951,25 +1006,18 @@ select#distrito option {
 }
 
 .card__title {
-  font-size: 3rem;
+  font-size: 2.2rem;
 }
 
 .card__price {
-  font-size: 2rem;
-  margin: 2rem 0;
+  font-size: 1.8rem;
+  margin: .5rem 0;
   display: block;
 }
 
 .card__benefit {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  font-size: 1.8rem;
-  padding: 1.5rem 0;
-  margin: .5rem 0;
+  font-size: 1.6rem;
+  padding: 1rem 0;
   border-top: 1px solid #142B64;
 }
 
@@ -986,6 +1034,12 @@ select#distrito option {
   bottom: 0;
   width: 100%;
   border-radius: 0 0 1rem 1rem;
+  -webkit-transition: all .3s ease-in;
+  transition: all .3s ease-in;
+}
+
+.card__btn:hover {
+  color: #FE614E;
 }
 
 .faqs {

@@ -4,6 +4,31 @@
         }
     }
     
+    .justify-start {
+        justify-self: start;
+    }
+    
+    .fz-2r {
+        font-size: 2rem;
+        @include mq($bpMedium) {
+            font-size: 1.5rem;
+        }
+    }
+    
+    .fz-25r-sm {
+        @include mq($bpMedium) {
+            font-size: 2.5rem;
+        }
+    }
+    
+    .fz-3r {
+        font-size: 3rem;
+    }
+    
+    .wd-80 {
+        width: 80%;
+    }
+    
     .white-bg {
         background-color: $white!important;
     }
