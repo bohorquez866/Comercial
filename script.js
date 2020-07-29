@@ -16,9 +16,12 @@ accItemHead.forEach(accItem => {
         const accordionItemBody = accItem.nextElementSibling;
 
         if (accItem.classList.contains("active")) {
-            accordionItemBody.style.maxHeight = accordionItemBody.scrollHeight + "px";
+            accordionItemBody.style.maxHeight = accordionItemBody.scrollHeight + 100 + "px";
+            accordionItemBody.style.overflow = 'initial';
         } else if (!accItem.classList.contains("active")) {
             accordionItemBody.style.maxHeight = 0;
+            accordionItemBody.style.overflow = 'hidden';
+
         }
     });
 });

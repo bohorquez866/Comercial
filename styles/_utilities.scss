@@ -29,12 +29,32 @@
         width: 80%;
     }
     
+    .wd-50 {
+        width: 50%;
+    }
+    
     .white-bg {
         background-color: $white!important;
     }
     
     .grey-bg {
         background-color: $grey-bg;
+    }
+    
+    .center-margin {
+        margin: auto;
+    }
+    
+    .grid-w-100 {
+        grid-column: 1/-1;
+    }
+    
+    .grid-center {
+        justify-self: center;
+    }
+    
+    .grid-stretch {
+        align-self: stretch;
     }
     
     .center-text {
@@ -70,6 +90,17 @@
     
     .inline-block {
         display: inline-block;
+    }
+    
+    .icon {
+        width: 3rem;
+        height: 3rem;
+        margin-right: 1rem;
+    }
+    
+    .flex-aligned {
+        display: flex;
+        align-items: center;
     }
     
     .btn {
@@ -126,8 +157,10 @@
             position: absolute;
             z-index: 100;
             top: 110%;
+            right: -15%;
             font-size: 1.3rem;
             color: $white;
+            //mq
             @include mq($bpMedium) {
                 position: static;
                 background-color: transparentize($tertiary-color, .4);
@@ -150,9 +183,6 @@
             max-height: 0;
             overflow: hidden;
             transition: max-height .3s ease-in;
-            &-shown {}
-            //mobile
-            //ICON in Desktop
             li {
                 padding: .5rem 1rem;
             }

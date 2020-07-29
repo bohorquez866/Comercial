@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Jesus Bohorquez">
     <script src="https://kit.fontawesome.com/514ec47f32.js" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./styles/main.css">
@@ -18,88 +19,75 @@
 
         <ul class="navbar__list accordion">
             <!-- HOME -->
-            <a href="./index.html" class="navbar__item accordion-item hidden-mobile">
-                <div class="navbar__link">
+
+            <li href="./index.html" class="navbar__item accordion-item hidden-mobile">
+                <a href="#" target="_blank" class="navbar__link">
                     <i class="fas fa-home"></i>
-                    <p>Home</p>
-                </div>
-            </a>
-            <!-- COMPRAR -->
-            <li class="navbar__item accordion-item">
-                <div class="navbar__link accordion-header">
-                    <i class="fas fa-tags"></i>
-                    <p>Comprar</p>
-                </div>
-                <ul class="accordion-body accordion__navbar-list">
-                    <li>Hidden</li>
-                    <li>Hidden</li>
-                </ul>
+                </a>
             </li>
-            <!-- SERVICO -->
-            <li class="navbar__item accordion-item">
-                <div class="navbar__link accordion-header">
-                    <i class="fas fa-store"></i>
-                    <p>Servicio</p>
-                </div>
-                <!-- ACCORDION -->
-                <ul class="accordion-body accordion__navbar-list">
-                    <li>Hidden</li>
-                    <li>Hidden</li>
-                </ul>
+            <!-- Beneficios -->
+            <li class="navbar__item navbar__item--lg-padding">
+                <a href="#beneficios" class="navbar__link fz-3r">
+                    Beneficios
+                </a>
             </li>
-            <!-- Clasificados -->
-            <li class="navbar__item accordion-item ">
-                <div class="navbar__link accordion-header">
-                    <i class="far fa-newspaper "></i>
-                    <p>Clasificados</p>
-                </div>
-                <!-- ACCORDION -->
-                <ul class="accordion-body accordion__navbar-list">
-                    <li>Hidden</li>
-                    <li>Hidden</li>
-                </ul>
+
+            <!-- Procesos -->
+            <li class="navbar__item navbar__item--lg-padding">
+                <a href="#procesos" class="navbar__link fz-3r">
+                    Procesos
+                </a>
             </li>
-            <!-- DORECTORIOS -->
-            <li class="navbar__item accordion-item">
-                <div class="navbar__link accordion-header">
-                    <i class="far fa-address-book"></i>
-                    <p>Directorios</p>
-                </div>
-                <!-- ACCORDION -->
-                <ul class="accordion-body accordion__navbar-list">
-                    <li>Hidden</li>
-                    <li>Hidden</li>
-                </ul>
+
+            <!-- Precio -->
+            <li class="navbar__item navbar__item--lg-padding">
+                <a href="#precio" class="navbar__link fz-3r">
+                    Precio
+                </a>
             </li>
-            <!-- CONTACTO -->
-            <li class="navbar__item accordion-item">
-                <div class="navbar__link accordion-header">
-                    <i class="fas fa-id-card"></i>
-                    <p>Contacto</p>
-                </div>
-                <!-- ACCORDION -->
-                <ul class="accordion-body accordion__navbar-list">
-                    <li>Hidden</li>
-                    <li>Hidden</li>
-                </ul>
+            <!-- recomendaciones -->
+            <li class="navbar__item navbar__item--lg-padding">
+                <a href="#recomendaciones" class="navbar__link fz-3r ">
+                    Recomendaciones
+                </a>
             </li>
 
         </ul>
-
+        <!-- LOGIN -->
         <figure class="navbar__item navbar__item--user accordion">
-            <ul class="accordion-item">
+            <ul class="accordion-item navbar__item--lg-padding">
                 <div class="navbar__link accordion-header">
                     <i class="fas fa-user "></i>
                     <p>Login</p>
                 </div>
 
                 <ul class="accordion-body accordion__navbar-list">
-                    <li>Login</li>
-                    <li>Registrarse</li>
-                    <li>Abre tu Tienda</li>
-                    <li>Registrarse Experto</li>
-                    <li>Publicar Aviso</li>
-                    <li><a href="#">Sistemas publicitarios</a></li>
+                    <li><a href="#" target="_blank">Login</a></li>
+                    <li><a href="#" target="_blank">Registrarse</a></li>
+                    <li>
+                        <p>Abre tu Tienda</p>
+                        <div class="submenu">
+                            <a href="#" target="_blank">Hello WORLD</a>
+                            <a href="#" target="_blank">Hello WORLD</a>
+                        </div>
+                    </li>
+
+                    <li>
+                        <p> Registrarse Experto</p>
+                        <div class="submenu">
+                            <a href="#" target="_blank">Hello WORLD</a>
+                            <a href="#" target="_blank">Hello WORLD</a>
+                        </div>
+                    </li>
+
+                    <li>
+                        <p>Publicar Aviso</p>
+                        <div class="submenu">
+                            <a href="#" target="_blank">Hello World</a>
+                            <a href="#" target="_blank">Hello World</a>
+                        </div>
+                    </li>
+                    <li><a href="#" target="_blank">Sistemas publicitarios</a></li>
                 </ul>
             </ul>
         </figure>
@@ -107,201 +95,226 @@
         <div class="burger-menu ">
             <span class="burger-menu__btn "></span>
         </div>
-    </nav>
-    <section class="contact-bar">
-        <article>
-            <a target="_blank" href="tel:+5116489725"><i class="fas fa-phone-alt "></i> +5116489725</a>
-            <a target="_blank" href="https://wa.me/51922237839"><i class="fab fa-whatsapp "></i> +51922237839</a>
-            <a target="_blank" href="mailto:informes@distritocomercial.pe"><i class="far fa-envelope "></i> informes@distritocomercial.pe</a>
-        </article>
 
-        <select id="distrito" class="select">
+        <section class="contact-bar grid-child__long">
+            <article>
+                <a target="_blank" href="tel:+5116489725"><i class="fas fa-phone-alt "></i> +5116489725</a>
+                <a target="_blank" href="https://wa.me/51922237839"><i class="fab fa-whatsapp "></i> +51922237839</a>
+                <a target="_blank" href="mailto:informes@distritocomercial.pe"><i class="far fa-envelope "></i> informes@distritocomercial.pe</a>
+            </article>
+
+            <select id="distrito" class="select">
                 <option value="Distrito " disabled>Distrito</option>
                 <option value="opcion1 ">Opcion</option>
                 <option value="Opcion2 ">Opcion</option>
             </select>
-    </section>
+        </section>
+
+    </nav>
+
 
     <header>
-        <h1 class=" center-text">¿Eres Negociante, <br> Necesitas Aumentar Tus Ventas?</h1>
-        <em class="pink-text center-text">
-                Sólo promociona tu catalogo de productos y recibe tus pedidos de forma automatica
-            </em>
+        <h1 class=" center-text">¿Eres Experto? <br> Registrate Gratis</h1>
+        <em class="pink-text center-text wd-80 center-margin">
+            Al hacerlo, podras recibir oportunidades de trabajo cerca de ti y en tus areas de experiencia. Puedes abrir la App siempre que necesites mas trabajo.            </em>
     </header>
 
-    <section class="grid-parent grid-parent__second white-bg">
+    <section class="grid-parent grid-parent__second white-bg" id="beneficios">
+        <h2 class="title-bg title-bg--blue center-text grid-child__long">Los beneficios de estar registrado como experto </h2>
+
         <img src="../assets/omid-armin-8Nppe0yLmn8-unsplash.png" class="description-img" alt="img">
 
         <div class="grid__vertical">
             <article class="grid-child">
-                <img src="../assets/stats.svg" class="icon" alt="icon">
-                <h3 class="grid-child__title">Caracteristica</h3>
-                <p class="grid-child__text">Quiere la boca exhausta vid, kiwi, piña y fugaz jamón. Fabio me exige, sin tapujos, que añada cerveza al whisky. Jovencillo emponzoñado de whisky, ¡qué figurota exhibes! La cigüeña tocaba.
-                </p>
-            </article>
-            <article class="grid-child">
-                <img src="../assets/stats.svg" class="icon" alt="icon">
-                <h3 class="grid-child__title">Caracteristica</h3>
-                <p class="grid-child__text">Quiere la boca exhausta vid, kiwi, piña y fugaz jamón. Fabio me exige, sin tapujos, que añada cerveza al whisky. Jovencillo emponzoñado de whisky, ¡qué figurota exhibes! La cigüeña tocaba.
+                <img src="../assets/money.svg" class="icon" alt="icon">
+                <h3 class="grid-child__title">Es Gratis</h3>
+                <p class="grid-child__text">Usa la App si quieres cotizar en requerimientos nuevos de clientes.
                 </p>
             </article>
 
             <article class="grid-child">
                 <img src="../assets/stats.svg" class="icon" alt="icon">
-                <h3 class="grid-child__title">Caracteristica</h3>
-                <p class="grid-child__text">Quiere la boca exhausta vid, kiwi, piña y fugaz jamón. Fabio me exige, sin tapujos, que añada cerveza al whisky. Jovencillo emponzoñado de whisky, ¡qué figurota exhibes! La cigüeña tocaba.
+                <h3 class="grid-child__title">Tu Cotizas</h3>
+                <p class="grid-child__text">Usa la App si quieres cotizar en requerimientos nuevos de clientes.</p>
+            </article>
+
+            <article class="grid-child">
+                <img src="../assets/choose.svg" class="icon" alt="icon">
+                <h3 class="grid-child__title">Tu Decides</h3>
+                <p class="grid-child__text">Tu decides que trabajo quieres por la conveniencia de tarea y ubicación
                 </p>
             </article>
 
 
             <article class="grid-child">
-                <img src="../assets/stats.svg" class="icon" alt="icon">
-                <h3 class="grid-child__title">Caracteristica</h3>
-                <p class="grid-child__text">Quiere la boca exhausta vid, kiwi, piña y fugaz jamón. Fabio me exige, sin tapujos, que añada cerveza al whisky. Jovencillo emponzoñado de whisky, ¡qué figurota exhibes! La cigüeña tocaba.
+                <img src="../assets/star.svg" class="icon" alt="icon">
+                <h3 class="grid-child__title">Tu Reputación</h3>
+                <p class="grid-child__text">Construye y capitaliza tu reputación con la calificación de los clientes
+
                 </p>
             </article>
 
+
             <article class="grid-child">
-                <img src="../assets/stats.svg" class="icon" alt="icon">
-                <h3 class="grid-child__title">Caracteristica</h3>
-                <p class="grid-child__text">Quiere la boca exhausta vid, kiwi, piña y fugaz jamón. Fabio me exige, sin tapujos, que añada cerveza al whisky. Jovencillo emponzoñado de whisky, ¡qué figurota exhibes! La cigüeña tocaba.
+                <img src="../assets/id.svg" class="icon" alt="icon">
+                <h3 class="grid-child__title">Tu Identidad</h3>
+                <p class="grid-child__text">Sube tu DNI para que los clientes puedan conocerte y tener seguridad.
                 </p>
             </article>
 
-            <article class="grid-child">
-                <img src="../assets/stats.svg" class="icon" alt="icon">
-                <h3 class="grid-child__title">Caracteristica</h3>
-                <p class="grid-child__text">Quiere la boca exhausta vid, kiwi, piña y fugaz jamón. Fabio me exige, sin tapujos, que añada cerveza al whisky. Jovencillo emponzoñado de whisky, ¡qué figurota exhibes! La cigüeña tocaba.
-                </p>
-            </article>
         </div>
-
+        <strong class="grid-child__long center-text pink-title mgt-1 transformY-1">
+                Registrarte como experto te abrirá un mundo de oportunidades. 
+            </strong>
     </section>
 
-    <section class="grid-parent grid-parent__second">
-        <h2 class="title-bg title-bg--blue center-text grid-child__long">Recomendaciones</h2>
-        <strong class="grid-child__long center-text pink-text mgt-1 transformY-1">Recibe trabajos como experto es muy sencillo.</strong>
+    <section class="grid-parent grid-parent__second" id="procesos">
+        <h2 class="title-bg title-bg--blue center-text grid-child__long">¿Cómo funciona?</h2>
+        <strong class="grid-child__long center-text pink-text wd-80 mgt-1 transformY-1">Recibe trabajos como experto es muy sencillo.</strong>
 
         <article class="grid-child grid-child--white">
-            <h3 class="pink-text"><span>Icon</span> Configura</h3>
-
-            <h4 class=".subheading">Paso 1</h4>
-            <p>fugaz jamón. Fabio me exige, sin tapujos, que añada cerveza al whisky. Jovencillo emponzoñado de whisky, ¡qué figurota exhibes! La cigüeña tocaba cada vez mejor el saxofón y el búho pedía kiwi y queso. El jefe.</p>
+            <h3 class="pink-text flex-aligned"> <img src="../assets/setting.svg" class="icon" alt="icon"> Configura
+            </h3>
+            <p>
+                Registrate como experto desde el Portal Distrito Comercial o descargando la App, configura tus categorias y sube tu DNI.
+            </p>
         </article>
 
         <article class="grid-child grid-child--white">
-            <h3 class="pink-text"><span>Icon</span> Configura</h3>
-
-            <h4 class=".subheading">Paso 1</h4>
-            <p>fugaz jamón. Fabio me exige, sin tapujos, que añada cerveza al whisky. Jovencillo emponzoñado de whisky, ¡qué figurota exhibes! La cigüeña tocaba cada vez mejor el saxofón y el búho pedía kiwi y queso. El jefe.</p>
+            <h3 class="pink-text flex-aligned"><img src="../assets/data.svg" class="icon" alt="icon"> Validacion Datos</h3>
+            <p>Validamos tu informacion, para darle mayor seguridad al cliente, posteriormente aparecera tu informacion en la App en la seccion Nuevos Expertos Registrados.</p>
         </article>
 
         <article class="grid-child grid-child--white">
-            <h3 class="pink-text"><span>Icon</span> Configura</h3>
-
-            <h4 class=".subheading">Paso 1</h4>
-            <p>fugaz jamón. Fabio me exige, sin tapujos, que añada cerveza al whisky. Jovencillo emponzoñado de whisky, ¡qué figurota exhibes! La cigüeña tocaba cada vez mejor el saxofón y el búho pedía kiwi y queso. El jefe.</p>
+            <h3 class="pink-text flex-aligned"><img src="../assets/bell.svg" class="icon" alt="icon"> Consulta</h3>
+            <p>Espera las solicitudes que aparecerán en pantalla, descarta las que no te interesen y cotiza a la que puedas atender de inmediato.</p>
         </article>
 
         <article class="grid-child grid-child--white">
-            <h3 class="pink-text"><span>Icon</span> Configura</h3>
-
-            <h4 class=".subheading">Paso 1</h4>
-            <p>fugaz jamón. Fabio me exige, sin tapujos, que añada cerveza al whisky. Jovencillo emponzoñado de whisky, ¡qué figurota exhibes! La cigüeña tocaba cada vez mejor el saxofón y el búho pedía kiwi y queso. El jefe.</p>
+            <h3 class="pink-text flex-aligned"><img src="../assets/comments.svg" class="icon" alt="icon"> Comentarios</h3>
+            <p>El cliente registrará los resultados de tu servicio, lo que te permitirá crear una reputación, que será visto por otros clientes, aumentando la probabilidad de conseguir más trabajos.</p>
         </article>
-
-
-
-
     </section>
 
-    <section class="grid-parent grid-parent__third">
+    <section class="grid-parent grid-parent__third" id="precio">
         <h2 class="title-bg title-bg--blue center-text grid-child__long">¿Cúanto Cuesta?</h2>
 
-        <strong class="grid-child__long">Quiere la boca exhausta vid, kiwi, piña y fugaz jamón. Fabio me exige, sin tapujos, que añada cerveza al whisky. Jovencillo emponzoñado de whisky, ¡qué figurota exhibes! La cigüeña tocaba cada vez mejor el saxofón y el búho pedía kiwi y queso. El jefe buscó el éxtasis en un imprevisto baño de whisky y gozó como un duque. Exhíbanse politiquillos zafios, con orejas kilométricas y uñas de gavilán. El cadáver de Wamba, rey godo de España, fue exhumado y trasladado en una caja de zinc que pesó un kilo. El pingüino Wenceslao.</strong>
+        <strong class="grid-child__long strong-black center-text">La App es gratuita, pero si como experto deseas tener mayor cobertura y más trabajos, puedes invertir en una subscripción mensual que puedes cancelar cuando gustes.</strong>
 
         <article class="card__holder card-holder-3">
 
-            <ul class="card center-text">
+            <ul class="card center-text center-text">
                 <h3 class="card__title">Plan Basico</h3>
-                <strong class="card__price"><sup>$</sup> 0 <span>/month</span></strong>
-                <li class="card__benefit"><span>Member</span> <strong>Unlimited</strong></li>
-                <li class="card__benefit"><span>Projects</span> <strong>Unlimited</strong></li>
-                <li class="card__benefit"><span>Users</span> <strong>Unlimited</strong></li>
-                <li class="card__benefit"><span>Storage</span> <strong>200gb</strong></li>
-                <li class="card__benefit"><span>More</span> <strong>Free Projects</strong></li>
-                <a href="#" class="title-bg title-bg--blue card__btn">Upgrade</a>
+                <strong class="card__price">Ilimitado</strong>
+                <li class="card__benefit"><strong>30 postulaciones al mes</strong></li>
+                <li class="card__benefit"><strong>3 categorias de trabajo</strong></li>
+                <li class="card__benefit"><strong>1 Km de Cobertura</strong></li>
+                <li class="card__benefit"><strong> - </strong></li>
+                <li class="card__benefit"><strong> - </strong></li>
+
+                <a href="#" target="_blank" class="title-bg title-bg--blue card__btn">Mejorar</a>
             </ul>
 
             <ul class="card card__highlight center-text">
-                <h3 class="card__title">Plan Basico</h3>
-                <strong class="card__price"><sup>$</sup> 0 <span>/month</span></strong>
-                <li class="card__benefit card__benefit--border-pink"><span>Member</span> <strong>Unlimited</strong></li>
-                <li class="card__benefit card__benefit--border-pink"><span>Projects</span> <strong>Unlimited</strong></li>
-                <li class="card__benefit card__benefit--border-pink"><span>Users</span> <strong>Unlimited</strong></li>
-                <li class="card__benefit card__benefit--border-pink"><span>Storage</span> <strong>200gb</strong></li>
-                <li class="card__benefit card__benefit--border-pink"><span>More</span> <strong>Free Projects</strong></li>
-                <a href="#" class="title-bg title-bg--blue card__btn">Upgrade</a>
+                <h3 class="card__title">Plan Chambas</h3>
+                <strong class="card__price"><sup>$</sup> XY.00 <span>/month</span></strong>
+                <li class="card__benefit"><strong>90 postulaciones al mes</strong></li>
+                <li class="card__benefit"><strong>5 categorias de trabajo</strong></li>
+                <li class="card__benefit"><strong>2.5 Km de Cobertura</strong></li>
+                <li class="card__benefit"><strong>5 Días de Publicidad de tus servicios en la sección Destacados al Mes</strong></li>
+                <li class="card__benefit"><strong> - </strong></li>
+
+                <a href="#" target="_blank" class="title-bg title-bg--blue card__btn">Mejorar</a>
             </ul>
 
             <ul class="card center-text">
-                <h3 class="card__title">Plan Basico</h3>
-                <strong class="card__price"><sup>$</sup> 0 <span>/month</span></strong>
-                <li class="card__benefit"><span>Member</span> <strong>Unlimited</strong></li>
-                <li class="card__benefit"><span>Projects</span> <strong>Unlimited</strong></li>
-                <li class="card__benefit"><span>Users</span> <strong>Unlimited</strong></li>
-                <li class="card__benefit"><span>Storage</span> <strong>200gb</strong></li>
-                <li class="card__benefit"><span>More</span> <strong>Free Projects</strong></li>
-
-                <a href="#" class="title-bg title-bg--blue card__btn">Upgrade</a>
+                <h3 class="card__title">Plan Maestro</h3>
+                <strong class="card__price"><sup>$</sup> XY.00 <span>/month</span></strong>
+                <li class="card__benefit"><strong>Postula sin limites</strong></li>
+                <li class="card__benefit"><strong>10 categorias de trabajo</strong></li>
+                <li class="card__benefit"><strong>5 Km de Cobertura</strong></li>
+                <li class="card__benefit"><strong>10 Días de Publicidad de tus servicios en la sección Destacados al Mes</strong></li>
+                <li class="card__benefit"><strong>Publica Ofertas de tus servicios</strong></li>
+                <a href="#" target="_blank" class="title-bg title-bg--blue card__btn">Mejorar</a>
             </ul>
+
         </article>
     </section>
     <!--  -->
-    <section class="grid-parent grid-parent__second white-bg">
+    <section class="grid-parent grid-parent__second white-bg" id="recomendaciones">
         <h2 class="title-bg title-bg--blue center-text grid-child__long">Recomendaciones</h2>
-        <strong class="grid-child__long center-text text-normal">Quiere la boca exhausta vid, kiwi, piña y fugaz jamón. Fabio me exige, sin tapujos, que añada cerveza al whisky. Jovencillo emponzoñado de whisky, ¡qué figurota exhibes! La cigüeña tocaba cada vez mejor el saxofón y el búho pedía kiwi y queso. El jefe buscó el éxtasis en un imprevisto baño de whisky y gozó como un duque. Exhíbanse politiquillos zafios, con orejas kilométricas y uñas de gavilán. El cadáver de Wamba, rey godo de España, fue exhumado y trasladado en una caja de zinc que pesó un kilo. El pingüino Wenceslao.</strong>
+        <strong class="grid-child__long strong-black center-text">Sigue las siguientes recomendaciones para tener un desempeño extraordinario.
+        </strong>
 
-        <article class="grid-child grid-child--curved grey-bg">
-            <h3 class="grid-child__title">Caracteristica</h3>
-            <p class="grid-child__text">Quiere la boca exhausta vid, kiwi, piña y fugaz jamón. Fabio me exige, sin tapujos, que añada cerveza al whisky. Jovencillo emponzoñado de whisky, ¡qué figurota exhibes! La cigüeña tocaba.
-            </p>
-        </article>
-
-        <article class="grid-child grid-child--curved grey-bg">
-            <h3 class="grid-child__title">Caracteristica</h3>
-            <p class="grid-child__text">Quiere la boca exhausta vid, kiwi, piña y fugaz jamón. Fabio me exige, sin tapujos, que añada cerveza al whisky. Jovencillo emponzoñado de whisky, ¡qué figurota exhibes! La cigüeña tocaba.
+        <article class="grid-child grid-child--curved grid-stretch grey-bg">
+            <h3 class="grid-child__title">Termina</h3>
+            <p class="grid-child__text">Solo puedes tener un trabajo activo a la vez, para postular a otros requerimientos debes terminar el trabajo activo.
             </p>
         </article>
 
-        <article class="grid-child grid-child--curved grey-bg">
-            <h3 class="grid-child__title">Caracteristica</h3>
-            <p class="grid-child__text">Quiere la boca exhausta vid, kiwi, piña y fugaz jamón. Fabio me exige, sin tapujos, que añada cerveza al whisky. Jovencillo emponzoñado de whisky, ¡qué figurota exhibes! La cigüeña tocaba.
+        <article class="grid-child grid-child--curved grid-stretch grey-bg">
+            <h3 class="grid-child__title">Cancela</h3>
+            <p class="grid-child__text">Si no puedes atender algo es importante que lo canceles para que otros expertos lo puedan atender, liberes tu app para otras oportunidades y el cliente quede satisfecho.
             </p>
         </article>
-        <article class="grid-child grid-child--curved grey-bg">
-            <h3 class="grid-child__title">Caracteristica</h3>
-            <p class="grid-child__text">Quiere la boca exhausta vid, kiwi, piña y fugaz jamón. Fabio me exige, sin tapujos, que añada cerveza al whisky. Jovencillo emponzoñado de whisky, ¡qué figurota exhibes! La cigüeña tocaba.
+
+        <article class="grid-child grid-child--curved grey-bg grid-stretch">
+            <h3 class="grid-child__title">Usa</h3>
+            <p class="grid-child__text">Abre la App para recibir solicitudes de trabajo, es la única forma en que podrás tener la certeza de estar informado de todo lo cercano a tí de tus categorías seleccionadas.
             </p>
         </article>
-        <article class="grid-child grid-child--curved grey-bg">
-            <h3 class="grid-child__title">Caracteristica</h3>
-            <p class="grid-child__text">Quiere la boca exhausta vid, kiwi, piña y fugaz jamón. Fabio me exige, sin tapujos, que añada cerveza al whisky. Jovencillo emponzoñado de whisky, ¡qué figurota exhibes! La cigüeña tocaba.
+
+        <article class="grid-child grid-child--curved grey-bg grid-stretch">
+            <h3 class="grid-child__title">Usa</h3>
+            <p class="grid-child__text">Abre la App para recibir solicitudes de trabajo, es la única forma en que podrás tener la certeza de estar informado de todo lo cercano a tí de tus categorías seleccionadas.
             </p>
         </article>
-        <article class="grid-child grid-child--curved grey-bg">
-            <h3 class="grid-child__title">Caracteristica</h3>
-            <p class="grid-child__text">Quiere la boca exhausta vid, kiwi, piña y fugaz jamón. Fabio me exige, sin tapujos, que añada cerveza al whisky. Jovencillo emponzoñado de whisky, ¡qué figurota exhibes! La cigüeña tocaba.
+
+        <article class="grid-child grid-child--curved grey-bg grid-stretch">
+            <h3 class="grid-child__title">Escoge Bien</h3>
+            <p class="grid-child__text">Escoge sólo trabajos que puedes atender inmediatamente y de forma exitosa. No arriesges una mala calificación por tomar todo lo que aparezca. Selecciona lo mejor para ti.
             </p>
         </article>
-        <article class="grid-child grid-child--curved grey-bg">
-            <h3 class="grid-child__title">Caracteristica</h3>
-            <p class="grid-child__text">Quiere la boca exhausta vid, kiwi, piña y fugaz jamón. Fabio me exige, sin tapujos, que añada cerveza al whisky. Jovencillo emponzoñado de whisky, ¡qué figurota exhibes! La cigüeña tocaba.
+
+        <article class="grid-child grid-child--curved grey-bg grid-stretch">
+            <h3 class="grid-child__title">Identifícate</h3>
+            <p class="grid-child__text">Por seguridad, es muy importante que subas tu DNI a la plataforma, de esta forma los clientes podrán corroborar tu identificación cuando te presentes a trabajar.
             </p>
         </article>
-        <article class="grid-child grid-child--curved grey-bg">
-            <h3 class="grid-child__title">Caracteristica</h3>
-            <p class="grid-child__text">Quiere la boca exhausta vid, kiwi, piña y fugaz jamón. Fabio me exige, sin tapujos, que añada cerveza al whisky. Jovencillo emponzoñado de whisky, ¡qué figurota exhibes! La cigüeña tocaba.
+
+        <article class="grid-child grid-child--curved grey-bg grid-stretch">
+            <h3 class="grid-child__title">Recomienda</h3>
+            <p class="grid-child__text">Recomienda Distrito Comercial Servicios a tus clientes actuales, inclusive realiza trabajos actuales, inclusive realiza trabajos actuales con la app. De esta forma rápido crecerá tu buena reputación.
+            </p>
+        </article>
+
+        <article class="grid-child grid-child--curved grey-bg grid-stretch">
+            <h3 class="grid-child__title">Agrega</h3>
+            <p class="grid-child__text">Los clientes valoran expertos que conocen nuevas técnicas, mejores prácticas y tienen cursos especializados en marcas y tecnologías. No dejes de aprender.
+            </p>
+        </article>
+
+        <article class="grid-child grid-child--curved grey-bg grid-stretch">
+            <h3 class="grid-child__title">Actualízate</h3>
+            <p class="grid-child__text">Suma todo el valor que puedas. Da el extra sin salirte del objetivo. Todos los detalles cuentan, no se trata de encontrar más fallas sino dar más soluciones.
+            </p>
+        </article>
+
+        <article class="grid-child grid-child--curved grey-bg grid-stretch">
+            <h3 class="grid-child__title">Cumple</h3>
+            <p class="grid-child__text">Procura siempre cumplir lo que prometes. Si te comprometes con alguna fecha, entregable, material o trabajo es importante que lo cumplas, si no mejor ni te comprometas.
+            </p>
+        </article>
+
+        <article class="grid-child grid-child--curved grey-bg grid-stretch">
+            <h3 class="grid-child__title">Limpia</h3>
+            <p class="grid-child__text">Responsabilizate por limpiar tu área de trabajo antes, durante y sobre todo al terminar cualquier proyecto. Esto habla mucho de ti y es la impresión que perdura.
+            </p>
+        </article>
+
+        <article class="grid-child grid-child--curved grey-bg grid-stretch">
+            <h3 class="grid-child__title">Respeta</h3>
+            <p class="grid-child__text">Nunca hables mal del trabajo de otro. Somos una comunidad y es importante apoyarnos. Ahora es tu oportunidad de ayudar a que el trabajo se haga mejor.
             </p>
         </article>
 
@@ -329,5 +342,7 @@
 </footer>
 
 <script src="../script.js"></script>
+
+</html>
 
 </html>

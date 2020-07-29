@@ -56,6 +56,9 @@ html {
     font-size: 62.5%;
     font-family: $primary-font!important;
     scroll-behavior: smooth;
+    @include mq-min($bpLarge) {
+        font-size: 80%;
+    }
 }
 
 a {

@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Jesus Bohorquez">
     <script src="https://kit.fontawesome.com/514ec47f32.js" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./styles/main.css">
@@ -18,88 +19,75 @@
 
         <ul class="navbar__list accordion">
             <!-- HOME -->
-            <a href="./index.html" class="navbar__item accordion-item hidden-mobile">
-                <div class="navbar__link">
+
+            <li href="./index.html" class="navbar__item accordion-item hidden-mobile">
+                <a href="#" class="navbar__link">
                     <i class="fas fa-home"></i>
-                    <p>Home</p>
-                </div>
-            </a>
-            <!-- COMPRAR -->
-            <li class="navbar__item accordion-item">
-                <div class="navbar__link accordion-header">
-                    <i class="fas fa-tags"></i>
-                    <p>Comprar</p>
-                </div>
-                <ul class="accordion-body accordion__navbar-list">
-                    <li>Hidden</li>
-                    <li>Hidden</li>
-                </ul>
+                </a>
             </li>
-            <!-- SERVICO -->
-            <li class="navbar__item accordion-item">
-                <div class="navbar__link accordion-header">
-                    <i class="fas fa-store"></i>
-                    <p>Servicio</p>
-                </div>
-                <!-- ACCORDION -->
-                <ul class="accordion-body accordion__navbar-list">
-                    <li>Hidden</li>
-                    <li>Hidden</li>
-                </ul>
+            <!-- Beneficios -->
+            <li class="navbar__item navbar__item--lg-padding">
+                <a href="#beneficios" class="navbar__link fz-3r">
+                    Beneficios
+                </a>
             </li>
-            <!-- Clasificados -->
-            <li class="navbar__item accordion-item ">
-                <div class="navbar__link accordion-header">
-                    <i class="far fa-newspaper "></i>
-                    <p>Clasificados</p>
-                </div>
-                <!-- ACCORDION -->
-                <ul class="accordion-body accordion__navbar-list">
-                    <li>Hidden</li>
-                    <li>Hidden</li>
-                </ul>
+
+            <!-- Procesos -->
+            <li class="navbar__item navbar__item--lg-padding">
+                <a href="#procesos" class="navbar__link fz-3r">
+                    Procesos
+                </a>
             </li>
-            <!-- DORECTORIOS -->
-            <li class="navbar__item accordion-item">
-                <div class="navbar__link accordion-header">
-                    <i class="far fa-address-book"></i>
-                    <p>Directorios</p>
-                </div>
-                <!-- ACCORDION -->
-                <ul class="accordion-body accordion__navbar-list">
-                    <li>Hidden</li>
-                    <li>Hidden</li>
-                </ul>
+
+            <!-- Precio -->
+            <li class="navbar__item navbar__item--lg-padding">
+                <a href="#precio" class="navbar__link fz-3r">
+                    Precio
+                </a>
             </li>
-            <!-- CONTACTO -->
-            <li class="navbar__item accordion-item">
-                <div class="navbar__link accordion-header">
-                    <i class="fas fa-id-card"></i>
-                    <p>Contacto</p>
-                </div>
-                <!-- ACCORDION -->
-                <ul class="accordion-body accordion__navbar-list">
-                    <li>Hidden</li>
-                    <li>Hidden</li>
-                </ul>
+            <!-- recomendaciones -->
+            <li class="navbar__item navbar__item--lg-padding">
+                <a href="#faqs" class="navbar__link fz-3r ">
+                    Preguntas Frecuentes
+                </a>
             </li>
 
         </ul>
-
+        <!-- LOGIN -->
         <figure class="navbar__item navbar__item--user accordion">
-            <ul class="accordion-item">
+            <ul class="accordion-item navbar__item--lg-padding">
                 <div class="navbar__link accordion-header">
                     <i class="fas fa-user "></i>
                     <p>Login</p>
                 </div>
 
                 <ul class="accordion-body accordion__navbar-list">
-                    <li>Login</li>
-                    <li>Registrarse</li>
-                    <li>Abre tu Tienda</li>
-                    <li>Registrarse Experto</li>
-                    <li>Publicar Aviso</li>
-                    <li><a href="#">Sistemas publicitarios</a></li>
+                    <li><a href="#" target="_blank">Login</a></li>
+                    <li><a href="#" target="_blank">Registrarse</a></li>
+                    <li>
+                        <p>Abre tu Tienda</p>
+                        <div class="submenu">
+                            <a href="#" target="_blank">Hello WORLD</a>
+                            <a href="#" target="_blank">Hello WORLD</a>
+                        </div>
+                    </li>
+
+                    <li>
+                        <p> Registrarse Experto</p>
+                        <div class="submenu">
+                            <a href="#" target="_blank">Hello WORLD</a>
+                            <a href="#" target="_blank">Hello WORLD</a>
+                        </div>
+                    </li>
+
+                    <li>
+                        <p>Publicar Aviso</p>
+                        <div class="submenu">
+                            <a href="#" target="_blank">Hello World</a>
+                            <a href="#" target="_blank">Hello World</a>
+                        </div>
+                    </li>
+                    <li><a href="#" target="_blank">Sistemas publicitarios</a></li>
                 </ul>
             </ul>
         </figure>
@@ -107,37 +95,44 @@
         <div class="burger-menu ">
             <span class="burger-menu__btn "></span>
         </div>
-    </nav>
-    <section class="contact-bar">
-        <article>
-            <a target="_blank" href="tel:+5116489725"><i class="fas fa-phone-alt "></i> +5116489725</a>
-            <a target="_blank" href="https://wa.me/51922237839"><i class="fab fa-whatsapp "></i> +51922237839</a>
-            <a target="_blank" href="mailto:informes@distritocomercial.pe"><i class="far fa-envelope "></i> informes@distritocomercial.pe</a>
-        </article>
 
-        <select id="distrito" class="select">
-            <option value="Distrito " disabled>Distrito</option>
-            <option value="opcion1 ">Opcion</option>
-            <option value="Opcion2 ">Opcion</option>
-        </select>
-    </section>
+        <section class="contact-bar grid-child__long">
+            <article>
+                <a target="_blank" href="tel:+5116489725"><i class="fas fa-phone-alt "></i> +5116489725</a>
+                <a target="_blank" href="https://wa.me/51922237839"><i class="fab fa-whatsapp "></i> +51922237839</a>
+                <a target="_blank" href="mailto:informes@distritocomercial.pe"><i class="far fa-envelope "></i> informes@distritocomercial.pe</a>
+            </article>
+
+            <select id="distrito" class="select">
+                <option value="Distrito " disabled>Distrito</option>
+                <option value="opcion1 ">Opcion</option>
+                <option value="Opcion2 ">Opcion</option>
+            </select>
+        </section>
+    </nav>
 
     <header>
         <h1 class=" center-text">¿Eres Negociante, <br> Necesitas Aumentar Tus Ventas?</h1>
-        <em class="pink-text center-text">
+        <em class="pink-text center-text wd-50 center-margin">
             Sólo promociona tu catalogo de productos y recibe tus pedidos de forma automatica
         </em>
     </header>
 
 
     <main>
-        <section class="grid-parent grid-parent__first ">
-            <h2 class="pink-title  wd-80trong center-text grid-child__long fz-25r-sm">Solo promociona tu catalogo de productos y recibe tus pedidos de forma automatica.
+        <section class="grid-parent grid-parent__first">
+            <strong class="pink-title  wd-80trong center-text grid-child__long fz-25r-sm">
+                Solo promociona tu catalogo de productos y recibe tus pedidos de forma automatica.
                 <br>
                 <strong class="strong-black grid-child__long center-text fz-2r">Los beneficios de registrar tu negocio
                     Registrar tu negocio te abrira un mundo de oportunidades.</strong>
-            </h2>
+            </strong>
+        </section>
 
+        <section class="grid-parent grid-parent__first" id="beneficios">
+            <h2 class="title-bg title-bg--blue center-text grid-child__long grid-center">Los beneficios de registrar tu negocio
+            </h2>
+            <strong class="strong-gray grid-child__long grid-center">Registrar tu negocio te abrira un mundo de posibilidades</strong>
 
 
             <!-- #1 -->
@@ -216,25 +211,22 @@
             <img class="cta__picture" src="../assets/manny-pantoja-9ukCFPNotzs-unsplash.png" alt="CTA Photo">
             <h2 class="title-bg title-bg--pink cta__title">empieza a tener gananacias desde ya</h2>
         </section>
+
         <!-- COMO FUNCIONA -->
-        <section class="grid-parent grid-parent__second">
+        <section class="grid-parent grid-parent__second" id="procesos">
             <h2 class="title-bg title-bg--blue center-text grid-child__long">¿Cómo Funciona?</h2>
-            <strong class="strong-black grid-child__long center-text">Elige el Plan que mas te convenga<br>
-                Tenemos 4 Planes entre los que puedes elegir de acuerdo a tu necesidad. El Plan Basico es Gratuito.
-            </strong>
+
             <!-- #1 -->
+            <article class="grid-child">
+                <img src="../assets/choose.svg" class="icon" alt="icon">
+                <h3 class="grid-child__title">Elige el Plan que mas te convenga</h3>
+                <p class="grid-child__text">Elige el Plan que mas te convenga Tenemos 4 Planes entre los que puedes elegir de acuerdo a tu necesidad. El Plan Basico es Gratuito.</p>
+            </article>
+            <!-- #2 -->
             <article class="grid-child">
                 <img src="../assets/register.svg" class="icon" alt="icon">
                 <h3 class="grid-child__title">Registrate en Distrito Comercial Negocios</h3>
                 <p class="grid-child__text">Crea tu cuenta registrando tus datos y completando una ficha de informacion basia de tu negocio.
-                </p>
-            </article>
-
-            <!-- #2 -->
-            <article class="grid-child">
-                <h3 class="grid-child__title">Crea tu cuenta registrando tus datos y completando una ficha de informacion basia de tu negocio.</h3>
-                <img src="../assets/user.svg" class="icon" alt="icon">
-                <p class="grid-child__text">Quiere la boca exhausta vid, kiwi, piña y fugaz jamón. Fabio me exige, sin tapujos, que añada cerveza al whisky. Jovencillo emponzoñado de whisky, ¡qué figurota exhibes! La cigüeña tocaba.
                 </p>
             </article>
 
@@ -287,10 +279,10 @@
 
 
         <!-- PLANES -->
-        <section class="grid-parent grid-parent__third">
+        <section class="grid-parent grid-parent__third" id="precio">
             <h2 class="title-bg title-bg--blue center-text grid-child__long">Planes</h2>
 
-            <strong class="grid-child__long text-normal">Puedes registrarte y crear tu Tienda Virtual en Distrito Comercial Gratis con el Plan Basico, pero si quieres tener mayor funcionalidad y cobertura para tu Tienda, puedes invertir en alguno de los Planes que ofrecemos con subscripción mensual que puedes cancelar cuando gustes.
+            <strong class="center-text  grid-child__long faqs__subtitle">Puedes registrarte y crear tu Tienda Virtual en Distrito Comercial Gratis con el Plan Basico, pero si quieres tener mayor funcionalidad y cobertura para tu Tienda, puedes invertir en alguno de los Planes que ofrecemos con subscripción mensual que puedes cancelar cuando gustes.
             </strong>
 
             <article class="card__holder">
@@ -344,6 +336,7 @@
                     <li class="card__benefit"><strong>Certificado SSL</strong></li>
                     <li class="card__benefit"><strong>Hasta 30000 Pagina vistas al mes</strong></li>
                     <li class="card__benefit"><strong>Tienda en Facebook</strong></li>
+                    <li class="card__benefit"><strong>Modulo de Ofertas y Promociones</strong></li>
                     <li class="card__benefit"><strong>Descargar Reportes en Excel</strong></li>
                     <a href="#" class="title-bg title-bg--blue card__btn">Mejorar</a>
                 </ul>
@@ -355,13 +348,14 @@
                     <li class="card__benefit"><strong>Vende Productos</strong></li>
                     <li class="card__benefit"><strong>Catálogo de Productos Ilimitado</strong></li>
                     <li class="card__benefit"><strong>Carrito de Compras</strong></li>
-                    <li class="card__benefit"><strong>Forma Pago Contra Entrega o Yape</strong></li>
-                    <li class="card__benefit"><strong>2 Usuarios Administrador</strong></li>
+                    <li class="card__benefit"><strong>Multiples pasarelas de pago contra entrega Yape</strong></li>
+                    <li class="card__benefit"><strong>Usuarios Administradores multiples</strong></li>
                     <li class="card__benefit"><strong>Sin Comisiones</strong></li>
                     <li class="card__benefit"><strong> Libro de Reclamaciones</strong></li>
                     <li class="card__benefit"><strong>Certificado SSL</strong></li>
                     <li class="card__benefit"><strong>Hasta 100000 Pagina vistas al mes</strong></li>
                     <li class="card__benefit"><strong>Tienda en Facebook</strong></li>
+                    <li class="card__benefit"><strong>Modulo de Ofertas y Promociones</strong></li>
                     <li class="card__benefit"><strong>Descargar Reportes en Excel</strong></li>
                     <a href="#" class="title-bg title-bg--blue card__btn">Mejorar</a>
                 </ul>
@@ -369,8 +363,8 @@
         </section>
 
         <!-- FAQs -->
-        <section class="faqs grid-parent grid-parent__third">
-            <h2 class="title-bg title-bg--blue center-text grid-child__long">¿Cómo Funciona?</h2>
+        <section class="faqs grid-parent grid-parent__third" id="faqs">
+            <h2 class="title-bg title-bg--blue center-text grid-child__long">Preguntas Frecuentes</h2>
             <span class="center-text  grid-child__long faqs__subtitle">Estas son algunas de las preguntas que nos hacen más a menudo. Si no encuentras una respuesta a tus inquietudes, no dudes en contactarnos.</span>
             <!-- Accordion Container -->
             <ul class="  grid-child__long accordion">
@@ -454,11 +448,9 @@
 
 
     <footer class="footer center-text ">
-
         <p class="footer-title">
             © 2020 <strong>Distrito Comercial</strong>. Todos los derechos reservados. | Producido por <strong>NETESA</strong> | Diseñado por <a href="https://jesusbohorquezz.netlify.app/" target="_blank">Jesus Bohorquez</a>
         </p>
-
 
         <div>
             <a href="# "><i class="fab fa-facebook-f "></i></a>
@@ -469,7 +461,6 @@
             <a href=" "><i class="fab fa-youtube "></i></a>
             <a href=" "><i class="fab fa-linkedin "></i></a>
         </div>
-
     </footer>
 
 
@@ -477,5 +468,7 @@
 </body>
 
 <script src="../script.js"></script>
+
+</html>
 
 </html>

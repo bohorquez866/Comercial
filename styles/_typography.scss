@@ -1,10 +1,11 @@
 h1 {
-    margin: 2rem 0;
+    margin: 11rem 2rem 0 2rem;
     font-size: 4rem;
     color: $tertiary-color;
-    @include mq($bpSmall) {
+    @include mq($bpMedium) {
         padding: 0 1rem;
         font-size: 3rem!important;
+        margin-top: 30rem;
     }
     @include mq-min($bpLarge) {
         font-size: 6rem;
@@ -145,7 +146,7 @@ h1 {
         font-size: 3rem;
         text-transform: uppercase;
         padding: 2rem;
-        width: 40rem;
+        width: 50rem;
         @include mq($bpSmall) {
             padding: 1rem;
             width: 25rem;

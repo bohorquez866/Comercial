@@ -65,7 +65,7 @@
     &__text {
         grid-row: 2/3;
         color: $text-color;
-        font-size: 1.5rem;
+        font-size: 2rem;
         text-align: justify;
         line-height: 1.5;
     }
@@ -186,6 +186,7 @@
 
 .faqs {
     background-color: #F9F9F9;
+    padding-top: 2rem;
     &__subtitle {
         font-size: 2rem;
     }

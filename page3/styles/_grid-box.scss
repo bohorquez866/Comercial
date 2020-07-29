@@ -10,11 +10,15 @@
         grid-template-columns: 30rem;
         grid-template-rows: repeat(3, max-content);
         box-shadow: 2px 12px 18px #0000001A;
-        align-self: center;
-        justify-self: center;
-        font-size: 1.5rem;
+        align-self: stretch;
+        justify-self: stretch;
+        justify-content: center;
+        align-content: stretch;
+        font-size: 2rem;
         @include mq($bpMedium) {
             padding: 2rem;
+            align-self: center;
+            justify-self: center;
         }
     }
 }
@@ -22,11 +26,12 @@
 .grid__vertical {
     display: grid;
     grid-row-gap: 3rem;
+    align-self: center;
 }
 
 .description-img {
     @include b-radius-1;
-    width: 95%;
+    width: 65%;
 }
 
 .card-holder-3 {
