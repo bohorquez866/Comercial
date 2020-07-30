@@ -9,7 +9,7 @@ accItemHead.forEach(accItem => {
         if (activeAC && activeAC !== accItem) {
             activeAC.classList.toggle("active");
             activeAC.nextElementSibling.style.maxHeight = 0;
-            accordionItemBody.style.overflow = 'hidden';
+            activeAC.nextElementSibling.style.overflow = 'hidden';
 
         }
 
